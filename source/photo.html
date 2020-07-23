@@ -141,36 +141,31 @@
       <h2 class="post-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
 
       <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="editor-form__upload" type="file" name="upload-photo">
+        <label>
+          <input class="editor-form__upload" type="file" name="upload-photo">
+          <img class="editor-form__img" src="https://via.placeholder.com/280x374" width="280" height="374"
+            alt="Загрузить фото">
+        </label>
 
         <div class="editor-form__filter">
           <ul class="editor-form__tools">
             <li class="editor-form__tool">
-              <button class="editor-form__button editor-form__button--crop editor-form__button--current" type="button">
-                <span class="visually-hidden">Кадрировать фото</span>
-              </button>
-              <div class="editor-form__range-controls">
-                <div class="editor-form__range"></div>
-                <div class="editor-form__toggle editor-form__toggle--current" tabindex="0"></div>
-              </div>
-            </li>
-            <li class="editor-form__tool">
-              <button class="editor-form__button editor-form__button--fill" type="button">
-                <span class="visually-hidden">Изменить заливку на фото</span>
-              </button>
-              <div class="editor-form__range-controls">
-                <div class="editor-form__range"></div>
-                <div class="editor-form__toggle" tabindex="0"></div>
-              </div>
-            </li>
-            <li class="editor-form__tool">
-              <button class="editor-form__button editor-form__button--contrast" type="button">
+              <label class="editor-form__label editor-form__label--fill">
                 <span class="visually-hidden">Изменить контрастность на фото</span>
-              </button>
-              <div class="editor-form__range-controls">
-                <div class="editor-form__range"></div>
-                <div class="editor-form__toggle" tabindex="0"></div>
-              </div>
+                <input class="editor-form__range" type="range">
+              </label>
+            </li>
+            <li class="editor-form__tool">
+              <label class="editor-form__label editor-form__label--fill">
+                <span class="visually-hidden">Изменить контрастность на фото</span>
+                <input class="editor-form__range" type="range">
+              </label>
+            </li>
+            <li class="editor-form__tool">
+              <label class="editor-form__label editor-form__label--fill">
+                <span class="visually-hidden">Изменить контрастность на фото</span>
+                <input class="editor-form__range" type="range">
+              </label>
             </li>
           </ul>
         </div>
