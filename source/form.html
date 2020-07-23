@@ -28,7 +28,7 @@
           <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link  main-nav__item--current">Конкурс</a>
+          <a class="main-nav__link  main-nav__link--current">Конкурс</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
@@ -46,7 +46,128 @@
       </p>
     </div>
 
-    <!-- Здесь будет форма -->
+    <form class="contest-form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="contest-form__group">
+        <ul class="contest-form__personal-data-list">
+          <li class="contest-form__personal-data-item">
+            <label class="contest-form__caption contest-form__caption--pink-caption">Фамилия:
+              <input class="contest-form__personal-data" type="text" name="last-name" placeholder="Укажите фамилию *"
+                required>
+            </label>
+          </li>
+          <li class="contest-form__personal-data-item">
+            <label class="contest-form__caption contest-form__caption--pink-caption">Имя:
+              <input class="contest-form__personal-data" type="text" name="name" placeholder="Введите ваше имя *"
+                required>
+            </label>
+          </li>
+          <li class="contest-form__personal-data-item">
+            <label class="contest-form__caption contest-form__caption--pink-caption">Отчество:
+              <input class="contest-form__personal-data" type="text" name="middle-name"
+                placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contest-form__group contest-form__group--grey-back">
+        <legend class="contest-form__group-title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="contest-form__checkbox-list">
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox contest-form__checkbox--checked" type="checkbox"
+                name="took-a-selfie-with-a-shar" checked>
+              Сделал селфи с акулой
+            </label>
+          </li>
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox contest-form__checkbox--checked" type="checkbox"
+                name="burned-on-the-beach" checked>
+              Обгорел на пляже
+            </label>
+          </li>
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox" type="checkbox" name="saw-chuck-norris">
+              Видел Чака Норрис
+            </label>
+          </li>
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox" type="checkbox" name="bought-some-souvenirs">
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox contest-form__checkbox--checked" type="checkbox"
+                name="held-the-tower" checked>
+              Удержал башню
+            </label>
+          </li>
+          <li class="contest-form__checkbox-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__checkbox" type="checkbox" name="trashed-the-hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contest-form__group">
+        <ul class="contest-form__personal-data-list">
+          <li class="contest-form__personal-data-item">
+            <label class="contest-form__caption contest-form__caption--pink-caption">Номер телефона
+              <input class="contest-form__personal-data" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+          </li>
+          <li class="contest-form__personal-data-item">
+            <label class="contest-form__caption contest-form__caption--pink-caption">Адрес почты
+              <input class="contest-form__personal-data" type="email" name="email" placeholder="Введите почту *"
+                required>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contest-form__group contest-form__group--grey-back">
+        <legend class="contest-form__group-title">С каким приложением путешествовали?</legend>
+        <ul class="contest-form__radio-list">
+          <li class="contest-form__radio-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__radio contest-form__radio--checked" type="radio" name="app"
+                value="ios" checked>
+              Pink для iOS
+            </label>
+          </li>
+          <li class="contest-form__radio-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__radio" type="radio" name="app" value="android">
+              Pink на Android
+            </label>
+          </li>
+          <li class="contest-form__radio-item">
+            <label class="contest-form__caption">
+              <input class="visually-hidden contest-form__radio" type="radio" name="app" value="windows">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contest-form__group">
+        <legend class="contest-form__group-title">Опишите свои эмоции</legend>
+        <textarea class="contest-form__textarea" name="message"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+
+      <button class="contest-form__button button button--green" type="submit">Отправить форму</button>
+      <p class="contest-form__requirement">
+        <span class="contest-form__star">*</span>
+        — обязательные поля
+      </p>
+    </form>
 
   </main>
 

@@ -25,7 +25,7 @@
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__item--current">Фотографии</a>
+          <a class="main-nav__link main-nav__link--current">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -137,7 +137,48 @@
       </article>
     </section>
 
-    <!-- Здесь будет блок с формой -->
+    <section class="post-photo">
+      <h2 class="post-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+
+      <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
+        <input class="editor-form__upload" type="file" name="upload-photo">
+
+        <div class="editor-form__filter">
+          <ul class="editor-form__tools">
+            <li class="editor-form__tool">
+              <button class="editor-form__button editor-form__button--crop editor-form__button--current" type="button">
+                <span class="visually-hidden">Кадрировать фото</span>
+              </button>
+              <div class="editor-form__range-controls">
+                <div class="editor-form__range"></div>
+                <div class="editor-form__toggle editor-form__toggle--current" tabindex="0"></div>
+              </div>
+            </li>
+            <li class="editor-form__tool">
+              <button class="editor-form__button editor-form__button--fill" type="button">
+                <span class="visually-hidden">Изменить заливку на фото</span>
+              </button>
+              <div class="editor-form__range-controls">
+                <div class="editor-form__range"></div>
+                <div class="editor-form__toggle" tabindex="0"></div>
+              </div>
+            </li>
+            <li class="editor-form__tool">
+              <button class="editor-form__button editor-form__button--contrast" type="button">
+                <span class="visually-hidden">Изменить контрастность на фото</span>
+              </button>
+              <div class="editor-form__range-controls">
+                <div class="editor-form__range"></div>
+                <div class="editor-form__toggle" tabindex="0"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="editor-form__button button button--upload" type="submit">Запостить</button>
+        <button class="editor-form__button-cancel button button--cancel" type="reset">Отменить</button>
+      </form>
+    </section>
 
   </main>
 
