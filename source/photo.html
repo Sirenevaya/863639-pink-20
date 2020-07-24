@@ -150,28 +150,34 @@
         <div class="editor-form__filter">
           <ul class="editor-form__tools">
             <li class="editor-form__tool">
-              <label class="editor-form__label editor-form__label--fill">
+              <button
+                class="editor-form__button-range editor-form__button-range--crop editor-form__button-range--current"
+                type="button">
                 <span class="visually-hidden">Изменить контрастность на фото</span>
-                <input class="editor-form__range" type="range">
-              </label>
+              </button>
+              <input class="editor-form__range" type="range">
             </li>
+
             <li class="editor-form__tool">
-              <label class="editor-form__label editor-form__label--fill">
+              <button class="editor-form__button-range editor-form__button-range--fill" type="button">
                 <span class="visually-hidden">Изменить контрастность на фото</span>
-                <input class="editor-form__range" type="range">
-              </label>
+              </button>
+              <input class="editor-form__range" type="range">
             </li>
+
             <li class="editor-form__tool">
-              <label class="editor-form__label editor-form__label--fill">
+              <button class="editor-form__button-range editor-form__button-range--contrast" type="button">
                 <span class="visually-hidden">Изменить контрастность на фото</span>
-                <input class="editor-form__range" type="range">
-              </label>
+              </button>
+              <input class="editor-form__range" type="range">
             </li>
           </ul>
         </div>
 
-        <button class="editor-form__button button button--upload" type="submit">Запостить</button>
-        <button class="editor-form__button-cancel button button--cancel" type="reset">Отменить</button>
+        <div class="editor-form__buttons">
+          <button class="button button--upload" type="submit">Запостить</button>
+          <button class="button button--cancel" type="reset">Отменить</button>
+        </div>
       </form>
     </section>
 
