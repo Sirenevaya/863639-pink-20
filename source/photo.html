@@ -141,37 +141,39 @@
       <h2 class="post-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
 
       <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
-        <label>
-          <input class="editor-form__upload" type="file" name="upload-photo">
-          <img class="editor-form__img" src="https://via.placeholder.com/280x374" width="280" height="374"
+        <label class="editor-form__upload-photo upload-photo">
+          <input class="upload-photo__upload-button" type="file" name="upload-photo">
+          <img class="upload-photo__img" src="https://via.placeholder.com/280x374" width="280" height="374"
             alt="Загрузить фото">
         </label>
 
         <div class="editor-form__filter">
           <ul class="editor-form__tools">
             <li class="editor-form__tool">
-              <button
-                class="editor-form__button-range editor-form__button-range--crop editor-form__button-range--current"
-                type="button">
-                <span class="visually-hidden">Изменить контрастность на фото</span>
+              <button class="editor-form__button-tool editor-form__button-tool--current" type="button">
+                <img class="editor-form__icon" src="https://via.placeholder.com/44x44" width="44" height="44"
+                  alt="Кадрировать фото">
               </button>
-              <input class="editor-form__range" type="range">
             </li>
-
             <li class="editor-form__tool">
-              <button class="editor-form__button-range editor-form__button-range--fill" type="button">
-                <span class="visually-hidden">Изменить контрастность на фото</span>
+              <button class="editor-form__button-tool" type="button">
+                <img class="editor-form__icon" src="https://via.placeholder.com/48x43" width="48" height="43"
+                  alt="Изменить заливку на фото">
               </button>
-              <input class="editor-form__range" type="range">
             </li>
-
-            <li class="editor-form__tool">
-              <button class="editor-form__button-range editor-form__button-range--contrast" type="button">
-                <span class="visually-hidden">Изменить контрастность на фото</span>
+            <li>
+              <button class="editor-form__button-tool" type="button">
+                <img class="editor-form__icon" src="https://via.placeholder.com/32x32" width="32" height="32"
+                  alt="Изменить контрастность на фото">
               </button>
-              <input class="editor-form__range" type="range">
             </li>
           </ul>
+        </div>
+
+        <div class="editor-form__ranges">
+          <input class="editor-form__range editor-form__range--current" type="range">
+          <input class="editor-form__range" type="range">
+          <input class="editor-form__range" type="range">
         </div>
 
         <div class="editor-form__buttons">
