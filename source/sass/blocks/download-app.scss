@@ -1,8 +1,8 @@
 .download-app__intro {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  }
+}
 
 .download-app__title {
   font-size: 24px;
@@ -14,11 +14,10 @@
 .download-app__inner {
   padding-top: 28px;
   padding-bottom: 38px;
-  background-color: #1D2631;
+  background-color: #1d2631;
 }
 
 .download-app__text {
   color: #ffffff;
   line-height: 24px;
 }
-
