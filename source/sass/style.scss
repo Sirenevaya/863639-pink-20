@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/download-app.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/features-app.scss";
+@import "blocks/user-post.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-footer.scss";
+
+.page__body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}

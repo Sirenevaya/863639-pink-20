@@ -1,0 +1,29 @@
+.user-post__label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $special-color;
+}
+
+.user-post__comment {
+  line-height: 24px;
+  color: $basic-color;
+  text-align: left;
+  background-color: #F2F2F2;
+}
+
+.user-post__author-name {
+  font-size: 14px;
+}
+
+.user-post__time,
+.user-post__likes-number {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user-post__likes-number {
+  color: $special-color;
+}

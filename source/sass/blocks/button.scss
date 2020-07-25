@@ -1,0 +1,13 @@
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  &:hover {
+    color: $special-color;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba($special-color, 0.3%)
+  }
+}

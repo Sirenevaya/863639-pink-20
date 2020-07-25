@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -41,28 +42,31 @@
     <h1 class="visually-hidden">Сайт мобильного приложения PINK</h1>
 
     <section class="download-app">
-      <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
+      <div class="download-app__intro">
+        <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
 
-      <img class="download-app__img" src="https://via.placeholder.com/320x286" width="320" height="286"
-        alt="Мобильное приложение PINK в работе на смартфоне">
+        <img class="download-app__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+          alt="Мобильное приложение PINK в работе на смартфоне">
+      </div>
+      <div class="download-app__inner">
+        <button class="download-app__button button" type="button">Скачать приложение</button>
 
-      <button class="download-app__button button" type="button">Скачать приложение</button>
-
-      <ul class="download-app__list download-app-list">
-        <li class="download-app-list__item">
-          <a class="download-app-list__link download-app-list__link--apple" href="https://www.apple.com/">Скачать
-            приложение PINK на айфон</a>
-        </li>
-        <li class="download-app-list__item">
-          <a class="download-app-list__link download-app-list__link--android"
-            href="https://play.google.com/store">Скачать приложение PINK на андроид</a>
-        </li>
-        <li class="download-app-list__item">
-          <a class="download-app-list__link download-app-list__link--windows"
-            href="https://www.microsoft.com/ru-ru/store/apps">Скачать приложение PINK на виндовc</a>
-        </li>
-      </ul>
-      <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <ul class="download-app__list download-app-list">
+          <li class="download-app-list__item">
+            <a class="download-app-list__link download-app-list__link--apple" href="https://www.apple.com/">Скачать
+              приложение PINK на айфон</a>
+          </li>
+          <li class="download-app-list__item">
+            <a class="download-app-list__link download-app-list__link--android"
+              href="https://play.google.com/store">Скачать приложение PINK на андроид</a>
+          </li>
+          <li class="download-app-list__item">
+            <a class="download-app-list__link download-app-list__link--windows"
+              href="https://www.microsoft.com/ru-ru/store/apps">Скачать приложение PINK на виндовc</a>
+          </li>
+        </ul>
+        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <section class="features-app">
