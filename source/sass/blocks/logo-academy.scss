@@ -1,0 +1,13 @@
+.logo-academy {
+  width: 27px;
+  height: 34px;
+  fill: $special-color;
+
+  &:hover {
+    fill: $basic-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

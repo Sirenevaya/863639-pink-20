@@ -1,18 +1,48 @@
 @import "variables.scss";
+@import "fonts.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/download-app.scss";
+@import "blocks/download-app-list.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/features-app.scss";
 @import "blocks/user-post.scss";
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/logo-academy.scss";
 @import "blocks/page-footer.scss";
 
-.page__body {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: $basic-color;
 }
