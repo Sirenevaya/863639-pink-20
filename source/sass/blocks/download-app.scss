@@ -1,18 +1,18 @@
 .download-app__intro {
   padding-top: 29px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $basic-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 102px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 114px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
