@@ -1,0 +1,31 @@
+.main-nav {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
+}

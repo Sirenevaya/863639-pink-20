@@ -1,0 +1,50 @@
+.user-post {
+  margin-bottom: 20px;
+}
+
+.user-post__label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $special-color;
+}
+
+.user-post__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.user-post__comment {
+  padding-top: 30px;
+  padding-bottom: 32px;
+  padding-left: 30px;
+  line-height: 24px;
+  color: $basic-color;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.user-post__author-name {
+  margin: 0;
+  font-size: 14px;
+}
+
+.user-post__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-post__heart {
+  font: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.user-post__likes-number {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $special-color;
+}
