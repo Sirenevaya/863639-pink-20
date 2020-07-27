@@ -1,9 +1,12 @@
+.download-app {
+  background-color: #1d2631;
+}
+
 .download-app__intro {
   padding-top: 29px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $basic-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 102px;
@@ -35,18 +38,13 @@
   }
 }
 
+.download-app__img {
+  display: block;
+}
+
 .download-app__inner {
   padding-top: 28px;
   padding-bottom: 38px;
-  background-color: #1d2631;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-  }
 }
 
 .download-app__text {
