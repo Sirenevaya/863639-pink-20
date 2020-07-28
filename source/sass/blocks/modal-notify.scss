@@ -1,0 +1,40 @@
+.modal-notify {
+  padding-top: 44px;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+.modal-notify__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-notify__description {
+  margin: 0;
+  margin-top: 37px;
+}
+
+.modal-notify__close {
+  margin-top: 41px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: #f2f2f2;
+}
+
+.modal-notify__close--white-back {
+  margin-top: 50px;
+  padding-top: 0;
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+    background-color: #f2f2f2;
+  }
+}

@@ -1,5 +1,8 @@
 .page-header {
+  position: relative;
+  min-height: 66px;
   background-color: rgba(#000000, 0.3%);
+  z-index: 1;
 
   &--opened {
     background-color: #283645;

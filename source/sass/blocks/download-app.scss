@@ -2,46 +2,6 @@
   background-color: #1d2631;
 }
 
-.download-app__intro {
-  padding-top: 29px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 102px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 114px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-}
-
-.download-app__title {
-  margin: 0;
-  margin-bottom: 34px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  color: #ffffff;
-
-  @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-}
-
-.download-app__img {
-  display: block;
-}
-
 .download-app__inner {
   padding-top: 28px;
   padding-bottom: 38px;

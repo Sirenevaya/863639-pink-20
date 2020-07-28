@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "fonts.scss";
+@import "blocks/page.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/download-app.scss";
@@ -7,42 +8,20 @@
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/features-app.scss";
+@import "blocks/reviews.scss";
+@import "blocks/table.scss";
+@import "blocks/price-table.scss";
+@import "blocks/price-app.scss";
+@import "blocks/contacts.scss";
+@import "blocks/post-photo.scss";
+@import "blocks/upload-photo.scss";
+@import "blocks/editor-form.scss";
 @import "blocks/user-post.scss";
+@import "blocks/contest-form.scss";
+@import "blocks/field.scss";
+@import "blocks/field-group.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/logo-academy.scss";
 @import "blocks/page-footer.scss";
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.page {
-  height: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.page__body {
-  min-height: 100%;
-  margin: 0;
-  color: $basic-color;
-}
+@import "blocks/modal-notify.scss";

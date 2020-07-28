@@ -1,0 +1,49 @@
+.contest-form {
+  font-size: 18px;
+}
+
+.contest-form__group {
+  padding-top: 42px;
+
+  &--personal-data {
+    padding-top: 5px;
+  }
+}
+
+.contest-form__fieldset {
+  padding: 0;
+  padding-bottom: 44px;
+  border: 2px solid #e5e5e5;
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+
+  &--personal-data {
+    border: none;
+  }
+}
+
+.contest-form__group--grey-back {
+  @media (max-width: $mobile-width-only) {
+    background-color: #f2f2f2;
+  }
+}
+
+.contest-form__group-title {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-color;
+
+  &--contact-data {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.contest-form__star {
+  color: $special-color;
+}

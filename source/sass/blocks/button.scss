@@ -32,4 +32,83 @@
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
+
+  &--upload {
+    color: $special-color;
+    border-color: $special-color;
+    border-radius: 30px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $special-color;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3%);
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 183px;
+    }
+  }
+
+  &--cancel {
+    color: rgba($basic-color, 0.1%);
+    border-color: rgba($basic-color, 0.1%);
+    border-radius: 30px;
+
+    &:hover {
+      color: rgba($basic-color, 0.3%);
+      background-color: transparent;
+      border-color: rgba($basic-color, 0.3%);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3%);
+      background-color: rgba($basic-color, 0.3%);
+      border-color: rgba($basic-color, 0%);
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 183px;
+    }
+  }
+
+  &--green {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    min-width: 276px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #2aab6d;
+    border: none;
+    border-radius: 1px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3%);
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 296px;
+    }
+  }
+
+  &--green-wide {
+    @media (min-width: $desktop-width) {
+      min-width: 456px;
+    }
+  }
 }
