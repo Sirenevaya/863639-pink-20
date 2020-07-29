@@ -3,7 +3,7 @@
 }
 
 .contest-form__group {
-  padding-top: 42px;
+  padding-top: 38px;
 
   &--personal-data {
     padding-top: 5px;
@@ -11,8 +11,10 @@
 }
 
 .contest-form__fieldset {
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
-  padding-bottom: 44px;
+  padding-bottom: 20px;
   border: 2px solid #e5e5e5;
 
   @media (max-width: $mobile-width-only) {
@@ -31,6 +33,8 @@
 }
 
 .contest-form__group-title {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 18px;
@@ -42,6 +46,23 @@
       display: none;
     }
   }
+}
+
+.contest-form__textarea {
+  width: 280px;
+  min-height: 200px;
+  margin-top: -24px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font: inherit;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #e5e5e5;
+}
+
+.contest-form__button {
+  margin-top: 20px;
 }
 
 .contest-form__star {

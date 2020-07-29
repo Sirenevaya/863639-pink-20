@@ -1,4 +1,5 @@
 .table {
+  border-spacing: 0;
   border-collapse: collapse;
 }
 
@@ -7,6 +8,7 @@
 }
 
 .table__cell {
+  padding: 0;
   border-width: 2px;
   border-style: solid;
   border-color: #e5e5e5;

@@ -1,12 +1,13 @@
 .field {
-  margin-bottom: 29px;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 400;
 }
 
 .field__caption {
   display: block;
-  margin-bottom: 17px;
+  margin-left: 23px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -16,7 +17,12 @@
 
 .field__data {
   display: block;
+  width: 276px;
   margin: 0 auto;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   font: inherit;
   border-width: 2px;
   border-style: solid;

@@ -11,14 +11,16 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--opened">
-    <a class="page-header__logo logo">
-      <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-        alt="Логотип сайта мобильного приложения PINK">
-    </a>
+    <div class="page-header__inner">
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+          alt="Логотип сайта мобильного приложения PINK">
+      </a>
 
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
 
     <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
@@ -53,18 +55,20 @@
 
         <ul class="download-app__list download-app-list">
           <li class="download-app-list__item">
-            <a class="download-app-list__link download-app-list__link--apple" href="https://www.apple.com/">Скачать
-              приложение PINK на айфон</a>
+            <a class="download-app-list__link download-app-list__link--apple" href="https://www.apple.com/">
+              <span class="visually-hidden">Скачать приложение PINK на айфон</span>
+            </a>
           </li>
           <li class="download-app-list__item">
-            <a class="download-app-list__link download-app-list__link--android"
-              href="https://play.google.com/store">Скачать приложение PINK на
-              андроид</a>
+            <a class="download-app-list__link download-app-list__link--android" href="https://play.google.com/store">
+              <span class="visually-hidden">Скачать приложение PINK на андроид</span>
+            </a>
           </li>
           <li class="download-app-list__item">
             <a class="download-app-list__link download-app-list__link--windows"
-              href="https://www.microsoft.com/ru-ru/store/apps">Скачать приложение PINK на
-              виндовc</a>
+              href="https://www.microsoft.com/ru-ru/store/apps">
+              <span class="visually-hidden">Скачать приложение PINK на виндовc</span>
+            </a>
           </li>
         </ul>
         <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -96,15 +100,14 @@
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
         </div>
-        <div class="features-app__item features-app__item">
+        <div class="features-app__item">
           <img class="features-app__img features-app__img--show-all-resolutions" src="img/iphone-screen-mobile@1x.png"
             width="157" height="320" alt="Телефон с розовым фильтром и смайликом поверх фото">
           <h3 class="features-app__title">Заводит новых друзей</h3>
+          <p class="features-app__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
         </div>
-        <p class="features-app__description">
-          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        </p>
-      </div>
     </section>
 
     <section class="reviews carousel">
@@ -241,7 +244,7 @@
       </div>
 
       <figure class="contacts__map">
-        <img class="contacts__map-image" src="https://via.placeholder.com/320x200" width="320" height="200"
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"
           alt="Карта офиса по адресу ул. Большая Конюшенная, 19">
       </figure>
     </section>
@@ -257,13 +260,22 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <object type="image/svg+xml" data="img/icon-twitter.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <object type="image/svg+xml" data="img/icon-facebook.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <object type="image/svg+xml" data="img/icon-youtube.svg"></object>
+          </a>
         </li>
       </ul>
     </div>

@@ -1,10 +1,26 @@
 .page-header {
-  position: relative;
-  min-height: 66px;
   background-color: rgba(#000000, 0.3%);
-  z-index: 1;
 
   &--opened {
-    background-color: #283645;
+    background-color: $basic-color;
   }
+}
+
+.page-header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+
+.page-header__logo {
+  margin-left: 20px;
+}
+
+.page-header__toggle {
+  margin-right: 20px;
 }

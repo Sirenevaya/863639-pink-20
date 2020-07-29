@@ -11,14 +11,16 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--opened">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-        alt="Логотип сайта мобильного приложения PINK">
-    </a>
+    <div class="page-header__inner">
+      <a class="page-header__logo logo" href="index.html">
+        <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+          alt="Логотип сайта мобильного приложения PINK">
+      </a>
 
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
 
     <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
@@ -77,7 +79,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Левон</h3>
           <time class="user-post__time" datetime="2020-07-18T10:05">(5 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
           <button class="user-post__heart" type="button">
@@ -94,7 +96,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Антон</h3>
           <time class="user-post__time" datetime="2020-07-17T22:05">(12 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Соседи будут рады!
           </p>
           <button class="user-post__heart" type="button">
@@ -111,7 +113,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Борис</h3>
           <time class="user-post__time" datetime="2020-07-17T11:05">(20 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Здесь могла быть ваша цитата о высоком и вечном.
           </p>
           <button class="user-post__heart" type="button">
@@ -128,7 +130,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Сергей</h3>
           <time class="user-post__time" datetime="2020-07-17T11:05">(25 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Самая кубанская в мире!
           </p>
           <button class="user-post__heart" type="button">
@@ -145,7 +147,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Максим</h3>
           <time class="user-post__time" datetime="2020-07-16T20:05">(40 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Где снег-то?
           </p>
           <button class="user-post__heart" type="button">
@@ -162,7 +164,7 @@
         <div class="user-post__comment">
           <h3 class="user-post__author-name">Надежда</h3>
           <time class="user-post__time" datetime="2020-07-16T15:05">(45 часов назад)</time>
-          <p class="user-post__text">
+          <p class="user-post__message">
             Всем GM и взаимные лайки!
           </p>
           <button class="user-post__heart" type="button">
@@ -186,17 +188,20 @@
           <ul class="editor-form__tools">
             <li class="editor-form__tool">
               <button class="editor-form__button-tool editor-form__button-tool--current" type="button">
-                <img class="editor-form__icon" src="" width="44" height="44" alt="Кадрировать фото">
+                <img class="editor-form__icon" src="img/icon-editor-crop.svg" width="44" height="44"
+                  alt="Кадрировать фото">
               </button>
             </li>
             <li class="editor-form__tool">
               <button class="editor-form__button-tool" type="button">
-                <img class="editor-form__icon" src="" width="48" height="43" alt="Изменить заливку на фото">
+                <img class="editor-form__icon" src="img/icon-editor-fill.svg" width="48" height="43"
+                  alt="Изменить заливку на фото">
               </button>
             </li>
             <li class="editor-form__tool">
               <button class="editor-form__button-tool" type="button">
-                <img class="editor-form__icon" src="" width="32" height="32" alt="Изменить контрастность на фото">
+                <img class="editor-form__icon" src="img/icon-editor-contrast.svg" width="32" height="32"
+                  alt="Изменить контрастность на фото">
               </button>
             </li>
           </ul>
@@ -226,13 +231,22 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <object type="image/svg+xml" data="img/icon-twitter.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <object type="image/svg+xml" data="img/icon-facebook.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <object type="image/svg+xml" data="img/icon-youtube.svg"></object>
+          </a>
         </li>
       </ul>
     </div>

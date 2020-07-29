@@ -11,14 +11,16 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--opened">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-        alt="Логотип сайта мобильного приложения PINK">
-    </a>
+    <div class="page-header__inner">
+      <a class="page-header__logo logo" href="index.html">
+        <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+          alt="Логотип сайта мобильного приложения PINK">
+      </a>
 
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
 
     <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
@@ -194,13 +196,22 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <object type="image/svg+xml" data="img/icon-twitter.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <object type="image/svg+xml" data="img/icon-facebook.svg"></object>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <object type="image/svg+xml" data="img/icon-youtube.svg"></object>
+          </a>
         </li>
       </ul>
     </div>

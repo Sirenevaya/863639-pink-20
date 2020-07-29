@@ -1,14 +1,16 @@
 .intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 421px;
-  margin-top: -66px;
-  padding-top: 88px;
+  margin-top: -67px;
+  padding-top: 90px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
@@ -23,7 +25,9 @@
 
 .intro__title {
   margin: 0;
-  padding-bottom: 34px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 28px;
   font-size: 24px;
   font-weight: 300;
   line-height: 33px;
@@ -51,6 +55,8 @@
 
 .intro__text {
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 44px;
   padding-bottom: 55px;
   line-height: 30px;

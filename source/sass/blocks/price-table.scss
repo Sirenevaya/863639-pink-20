@@ -1,6 +1,17 @@
 .price-table {
+  width: 840px;
   margin: 0 auto;
   margin-bottom: 45px;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
 }
 
 .price-table__cell {
