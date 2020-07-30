@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: $basic-color;
+}

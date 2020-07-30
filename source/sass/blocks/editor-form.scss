@@ -1,0 +1,37 @@
+.editor-form {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: #f2f2f2;
+}
+
+.editor-form__filter {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba($basic-color, 0.1%);
+}
+
+.editor-form__tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 194px;
+  margin: 0 auto;
+  margin-top: 42px;
+  padding: 0;
+  padding-bottom: 27px;
+  list-style: none;
+}
+
+.editor-form__button-tool {
+  border: none;
+  background-color: transparent;
+}
+
+.editor-form__range {
+  display: none;
+}
+
+.editor-form__buttons {
+  margin-top: 38px;
+}

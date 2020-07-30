@@ -1,5 +1,38 @@
 .download-app-list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 204px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.download-app-list__link {
+  display: block;
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--windows {
+    width: 44px;
+    height: 41px;
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }

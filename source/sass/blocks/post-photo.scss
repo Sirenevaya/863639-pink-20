@@ -1,0 +1,15 @@
+.post-photo {
+  padding-top: 29px;
+}
+
+.post-photo__title {
+  margin: 0;
+  margin-bottom: 52px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

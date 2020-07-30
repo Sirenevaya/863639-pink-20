@@ -11,14 +11,16 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--opened">
-    <a class="page-header__logo logo">
-      <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-        alt="Логотип сайта мобильного приложения PINK">
-    </a>
+    <div class="page-header__inner">
+      <a class="page-header__logo logo" href="index.html">
+        <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+          alt="Логотип сайта мобильного приложения PINK">
+      </a>
 
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
 
     <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
@@ -49,117 +51,129 @@
 
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <fieldset class="contest-form__group">
-        <div class="contest-form__field field">
-          <label class="field__caption">Фамилия:</label>
-          <input class="field__data" type="text" name="last-name" placeholder="Укажите фамилию *" required>
-        </div>
-        <div class="contest-form__field field">
-          <label class="field__caption">Имя:</label>
-          <input class="field__data" type="text" name="name" placeholder="Введите ваше имя *" required>
-        </div>
-        <div class="contest-form__field field">
-          <label class="field__caption">Отчество:</label>
-          <input class="field__data" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-        </div>
-      </fieldset>
+      <div class="contest-form__group contest-form__group--personal-data">
+        <fieldset class="contest-form__fieldset contest-form__fieldset--personal-data">
+          <div class="contest-form__field field">
+            <label class="field__caption">Фамилия:</label>
+            <input class="field__data" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="contest-form__field field">
+            <label class="field__caption">Имя:</label>
+            <input class="field__data" type="text" name="name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="contest-form__field field">
+            <label class="field__caption">Отчество:</label>
+            <input class="field__data" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset class="contest-form__group contest-form__group--grey-back">
-        <legend class="contest-form__group-title">Ваши безбашенные достижения в путешествии</legend>
+      <div class="contest-form__group contest-form__group--grey-back">
+        <fieldset class="contest-form__fieldset">
+          <legend class="contest-form__group-title">Ваши безбашенные достижения в путешествии</legend>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox field-group__checkbox--checked" type="checkbox"
-              name="progress" value="Сделал селфи с акулой" checked>
-            Сделал селфи с акулой
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+                value="Сделал селфи с акулой" checked>
+              Сделал селфи с акулой
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox field-group__checkbox--checked" type="checkbox"
-              name="progress" value="Обгорел на пляже" checked>
-            Обгорел на пляже
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+                value="Обгорел на пляже" checked>
+              Обгорел на пляже
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-              value="Видел Чака Норрис">
-            Видел Чака Норриса
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+                value="Видел Чака Норрис">
+              Видел Чака Норриса
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-              value="Накупил сувениров">
-            Накупил сувениров
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+                value="Накупил сувениров">
+              Накупил сувениров
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox field-group__checkbox--checked" type="checkbox"
-              name="progress" value="Удержал башню" checked>
-            Удержал башню
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress" value="Удержал башню"
+                checked>
+              Удержал башню
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-              value="Разгромил отель">
-            Разгромил отель
-          </label>
-        </div>
-      </fieldset>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+                value="Разгромил отель">
+              Разгромил отель
+            </label>
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset class="contest-form__group">
-        <div class="contest-form__field field">
-          <label class="field__caption">Номер телефона</label>
-          <input class="field__data" type="tel" name="phone" placeholder="Номер, пожалуйста">
-        </div>
+      <div class="contest-form__group">
+        <fieldset class="contest-form__fieldset">
+          <legend class="contest-form__group-title contest-form__group-title--contact-data">Контактная информация
+          </legend>
 
-        <div class="contest-form__field field">
-          <label class="field__caption">Адрес почты</label>
-          <input class="field__data" type="email" name="email" placeholder="Введите почту *" required>
-        </div>
-      </fieldset>
+          <div class="contest-form__field field">
+            <label class="field__caption">Номер телефона</label>
+            <input class="field__data" type="tel" name="phone" placeholder="Номер, пожалуйста">
+          </div>
 
-      <fieldset class="contest-form__group contest-form__group--grey-back">
-        <legend class="contest-form__group-title">С каким приложением путешествовали?</legend>
+          <div class="contest-form__field field">
+            <label class="field__caption">Адрес почты</label>
+            <input class="field__data" type="email" name="email" placeholder="Введите почту *" required>
+          </div>
+        </fieldset>
+      </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__radio field-group__radio--checked" type="radio" name="app"
-              value="iOS" checked>
-            Pink для iOS
-          </label>
-        </div>
+      <div class="contest-form__group contest-form__group--grey-back">
+        <fieldset class="contest-form__fieldset">
+          <legend class="contest-form__group-title">С каким приложением путешествовали?</legend>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__radio" type="radio" name="app" value="Android">
-            Pink на Android
-          </label>
-        </div>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__radio" type="radio" name="app" value="iOS" checked>
+              Pink для iOS
+            </label>
+          </div>
 
-        <div class="contest-form__field field-group">
-          <label class="field-group__caption">
-            <input class="visually-hidden field-group__radio" type="radio" name="app" value="Windows">
-            Windows Phone
-          </label>
-        </div>
-      </fieldset>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__radio" type="radio" name="app" value="Android">
+              Pink на Android
+            </label>
+          </div>
 
-      <fieldset class="contest-form__group">
-        <legend class="contest-form__group-title">Опишите свои эмоции</legend>
+          <div class="contest-form__field field-group">
+            <label class="field-group__caption">
+              <input class="visually-hidden field-group__radio" type="radio" name="app" value="Windows">
+              Windows Phone
+            </label>
+          </div>
+        </fieldset>
+      </div>
 
-        <textarea class="contest-form__textarea" name="message"
-          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
+      <div class="contest-form__group">
+        <fieldset class="contest-form__fieldset">
+          <legend class="contest-form__group-title">Опишите свои эмоции</legend>
+
+          <textarea class="contest-form__textarea" name="message"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+      </div>
 
       <div class="contest-form__button">
         <button class="button button--green" type="submit">Отправить форму</button>
@@ -181,13 +195,28 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" width="27" height="34" transform="translate(6 17)">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" width="9" height="18" transform="translate(0 13)">
+              <use xlink:href=" img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <svg class="social__icon" width="15" height="13" transform="translate(2 10)">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -196,11 +225,8 @@
       <span class="copyright__text">Разработано:</span>
       <a class="copyright__link logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
-          xml:space="preserve">
-          <path
-            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+        <svg class="logo-academy__icon" width="27px" height="34px" transform="translate(0 5)">
+          <use xlink:href=" img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
@@ -209,7 +235,7 @@
   <div class="modal-notify">
     <p class="modal-notify__title">Что-то пошло не так!</p>
     <p class="modal-notify__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <div class="modal-notify__close  modal-notify__close--white-back">
+    <div class="modal-notify__close modal-notify__close--white-back">
       <button class="button button--green" type="button">Ок</button>
     </div>
   </div>
@@ -219,7 +245,7 @@
     <p class="modal-notify__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшеевремя мы
       рассмотрим ее и оповестим вас.</p>
     <div class="modal-notify__close">
-      <button class="button button--green" type="button">Закрыть окно</button>
+      <button class="button button--green button--wide" type="button">Закрыть окно</button>
     </div>
   </div>
 
