@@ -27,15 +27,15 @@
   padding-top: 52px;
   padding-bottom: 52px;
   background-color: #f2f2f2;
-}
 
-.modal-notify__close--white-back {
-  margin-top: 50px;
-  padding-top: 0;
-  background-color: #ffffff;
+  &--white-back {
+    margin-top: 50px;
+    padding-top: 0;
+    background-color: #ffffff;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 52px;
-    background-color: #f2f2f2;
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+      background-color: #f2f2f2;
+    }
   }
 }
