@@ -1,5 +1,33 @@
 .social__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba($basic-color, 0.1%);
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $basic-color;
+  }
+
+  &:active {
+    border-color: rgba($basic-color, 0.4%);
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: $special-color;
 }
