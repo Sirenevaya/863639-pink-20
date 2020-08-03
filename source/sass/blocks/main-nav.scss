@@ -1,9 +1,16 @@
 .main-nav {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
   background-color: $basic-color;
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
@@ -13,6 +20,13 @@
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #000000;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -46,5 +60,6 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+    border: none;
   }
 }

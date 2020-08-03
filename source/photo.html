@@ -43,7 +43,7 @@
   <main class="page__main page-main">
 
     <div class="intro">
-      <h1 class="intro__title">Фотографии пользователей</h1>
+      <h1 class="intro__title">Фотографии<br>пользователей</h1>
       <p class="intro__text">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
@@ -53,125 +53,146 @@
       <h2 class="visually-hidden">Список фотографий от пользователей приложения PINK</h2>
 
       <article class="user-post user-post--main-photo">
-        <span class="user-post__label">Панорама дня</span>
         <a class="user-post__link user-post__link--main-photo" href="#">
           <img class="user-post__img user-post__img--main-photo" src="img/panorama-mobile@1x.jpg" width="320"
             height="137" alt="Вид с большого моста над горной рекой">
         </a>
         <div class="user-post__comment user-post__comment--main-photo">
-          <h3 class="user-post__author-name">Анна</h3>
-          <time class="user-post__time" datetime="2020-07-18T15:00">(5 минут назад)</time>
-          <p class="user-post__message">
+          <div class="user-post__author">
+            <h3 class="user-post__author-name">Анна</h3>
+            <time class="user-post__time" datetime="2020-07-18T15:00">(5 минут назад)</time>
+          </div>
+          <p class="user-post__message user-post__message--main-photo">
             Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-            вопросы
+            вопросы!
           </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 356</span>
-          </button>
-        </div>
-      </article>
-
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-            alt="Белая машина на парковке, которую снимают на камеру">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Левон</h3>
-          <time class="user-post__time" datetime="2020-07-18T10:05">(5 часов назад)</time>
-          <p class="user-post__message">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 356</span>
-          </button>
-        </div>
-      </article>
-
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-            alt="Набор инструментов для барабанщика">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Антон</h3>
-          <time class="user-post__time" datetime="2020-07-17T22:05">(12 часов назад)</time>
-          <p class="user-post__message">
-            Соседи будут рады!
-          </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 666</span>
-          </button>
-        </div>
-      </article>
-
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-            alt="Кубанская ярмарка овощей и фруктов под большим навесом">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Борис</h3>
-          <time class="user-post__time" datetime="2020-07-17T11:05">(20 часов назад)</time>
-          <p class="user-post__message">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </p>
-          <button class="user-post__heart" type="button">
+          <div class="user-post__likes user-post__likes--main-photo">
+            <button class="user-post__heart" type="button"></button>
             <span class="user-post__likes-number">Нравится: 215</span>
-          </button>
+          </div>
         </div>
       </article>
 
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-            alt="Кубанская ярмарка овощей и фруктов под большим навесом">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Сергей</h3>
-          <time class="user-post__time" datetime="2020-07-17T11:05">(25 часов назад)</time>
-          <p class="user-post__message">
-            Самая кубанская в мире!
-          </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 4</span>
-          </button>
-        </div>
-      </article>
+      <div class="photo-content__inner">
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
+              alt="Белая машина на парковке, которую снимают на камеру">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Левон</h3>
+              <time class="user-post__time" datetime="2020-07-18T10:05">(5 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 356</span>
+            </div>
+          </div>
+        </article>
 
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-            alt="Человек сидит в горах на камне и смотрит вокруг - все зеленое">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Максим</h3>
-          <time class="user-post__time" datetime="2020-07-16T20:05">(40 часов назад)</time>
-          <p class="user-post__message">
-            Где снег-то?
-          </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 150</span>
-          </button>
-        </div>
-      </article>
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
+              alt="Набор инструментов для барабанщика">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Антон</h3>
+              <time class="user-post__time" datetime="2020-07-17T22:05">(12 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Соседи будут рады!
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 666</span>
+            </div>
+        </article>
 
-      <article class="user-post">
-        <a class="user-post__link" href="#">
-          <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-            alt="Самолет в небе на фоне заходящего солнца">
-        </a>
-        <div class="user-post__comment">
-          <h3 class="user-post__author-name">Надежда</h3>
-          <time class="user-post__time" datetime="2020-07-16T15:05">(45 часов назад)</time>
-          <p class="user-post__message">
-            Всем GM и взаимные лайки!
-          </p>
-          <button class="user-post__heart" type="button">
-            <span class="user-post__likes-number">Нравится: 2560</span>
-          </button>
-        </div>
-      </article>
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
+              alt="Кубанская ярмарка овощей и фруктов под большим навесом">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Борис</h3>
+              <time class="user-post__time" datetime="2020-07-17T11:05">(20 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 215</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
+              alt="Кубанская ярмарка овощей и фруктов под большим навесом">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Сергей</h3>
+              <time class="user-post__time" datetime="2020-07-17T11:05">(25 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Самая кубанская в мире!
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 4</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
+              alt="Человек сидит в горах на камне и смотрит вокруг - все зеленое">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Максим</h3>
+              <time class="user-post__time" datetime="2020-07-16T20:05">(40 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Где снег-то?
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 150</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <a class="user-post__link" href="#">
+            <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
+              alt="Самолет в небе на фоне заходящего солнца">
+          </a>
+          <div class="user-post__comment">
+            <div class="user-post__author">
+              <h3 class="user-post__author-name">Надежда</h3>
+              <time class="user-post__time" datetime="2020-07-16T15:05">(45 часов назад)</time>
+            </div>
+            <p class="user-post__message">
+              Всем GM и взаимные лайки!
+            </p>
+            <div class="user-post__likes">
+              <button class="user-post__heart" type="button"></button>
+              <span class="user-post__likes-number">Нравится: 2560</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="post-photo">
@@ -233,25 +254,16 @@
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Мы в Твиттере</span>
-            <svg class="social__icon" width="27" height="34" transform="translate(6 17)">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
-            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg class="social__icon" width="9" height="18" transform="translate(0 13)">
-              <use xlink:href=" img/sprite.svg#icon-facebook"></use>
-            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">Мы в Ютубе</span>
-            <svg class="social__icon" width="15" height="13" transform="translate(2 10)">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
-            </svg>
           </a>
         </li>
       </ul>
@@ -261,9 +273,6 @@
       <span class="copyright__text">Разработано:</span>
       <a class="copyright__link logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <svg class="logo-academy__icon" width="27px" height="34px" transform="translate(0 5)">
-          <use xlink:href=" img/sprite.svg#logo-htmlacademy"></use>
-        </svg>
       </a>
     </div>
   </footer>
