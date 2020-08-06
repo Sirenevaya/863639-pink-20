@@ -32,15 +32,13 @@
 }
 
 .intro__inner {
-  width: 320px;
-  margin: 0 auto;
   min-height: 650px;
-  background-repeat: no-repeat;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
   background-position: 0 86px;
 
   @media (min-width: $tablet-width) {
@@ -83,6 +81,7 @@
   }
 
   &--index {
+    max-width: 280px;
     line-height: 29px;
 
     @media (min-width: $tablet-width) {

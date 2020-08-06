@@ -1,4 +1,5 @@
 .features-app {
+  text-align: center;
   color: $basic-color;
   background-color: #f2f2f2;
 }
@@ -9,12 +10,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 65px;
-    padding-bottom: 1px;
+    padding-bottom: 35px;
   }
 }
 
@@ -30,7 +26,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 660px;
+    max-width: 588px;
     font-size: 40px;
     line-height: 54px;
 
@@ -40,70 +36,32 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 960px;
+    max-width: 780px;
     font-size: 50px;
     line-height: 68px;
   }
 }
 
-.features-app__list {
-  min-height: 828px;
-  margin: auto;
-  padding-top: 53px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+.features-app__inner {
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 640px;
-    min-height: 446px;
-    padding-top: 36px;
-    background-image: none;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column-reverse;
     max-width: 960px;
   }
 }
 
-.features-app__item {
-  width: 280px;
-
-  @media (max-width: $mobile-width-only) {
-    margin: 0 auto;
-  }
-
-  &--show-all-resolutions {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 2px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -18px;
-      right: 350px;
-      width: 268px;
-      height: 481px;
-      background-image: url("../img/iphone-screen-3-tablet@1x.png");
-      background-repeat: no-repeat;
-
-      @media (max-width: $mobile-width-only) {
-        display: none;
-      }
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
-    }
-  }
+.features-app__list {
+  padding-top: 53px;
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -111,21 +69,53 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
     text-align: center;
+  }
+}
+
+.features-app__item {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+  }
+}
+
+.features-app__images {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
 .features-app__img {
   display: none;
+  width: 157px;
+  height: 320px;
+  margin: 0 auto;
+
+  &--show-all-resolutions {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 268px;
+    height: 481px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 53px;
+    width: 292px;
+    height: 302px;
+    margin: 0;
   }
 }
 
@@ -135,6 +125,10 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 240px;
@@ -147,12 +141,11 @@
 .features-app__description {
   margin: 0;
   margin-top: 13px;
-  margin-bottom: 30px;
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
     width: 249px;
-    margin: 22px auto;
+    margin: 35px auto;
     font-size: 18px;
     line-height: 30px;
   }
