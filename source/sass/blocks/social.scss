@@ -12,6 +12,7 @@
   height: 52px;
   margin-left: 5px;
   margin-right: 5px;
+  color: $special-color;
   border-width: 3px;
   border-style: solid;
   border-color: rgba($basic-color, 0.1%);
@@ -28,5 +29,19 @@
 }
 
 .social__icon {
-  fill: $special-color;
+  fill: currentColor;
+
+  &--twitter {
+    margin: 17px auto;
+  }
+
+  &--facebook {
+    margin: 15px auto;
+  }
+
+  &--youtube {
+    margin-top: 18px;
+    margin-left: 5px;
+    margin-bottom: 17px;
+  }
 }

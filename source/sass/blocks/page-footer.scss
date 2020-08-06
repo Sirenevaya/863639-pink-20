@@ -5,7 +5,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
   }
 }
 
@@ -14,7 +21,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
