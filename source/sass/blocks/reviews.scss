@@ -1,6 +1,10 @@
 .reviews {
+  position: relative;
+  margin-top: -39px;
   padding-top: 40px;
   padding-bottom: 60px;
+  background-color: #ffffff;
+  z-index: 2;
 }
 
 .reviews__item {

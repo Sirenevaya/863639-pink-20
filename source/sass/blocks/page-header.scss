@@ -2,8 +2,59 @@
   position: relative;
   background-color: rgba(#000000, 0.3%);
 
-  &--opened {
-    background-color: $basic-color;
+  &--closed .page-header__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
+
+  &--opened .page-header__toggle {
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -3px;
+      width: 28px;
+      height: 4px;
+      background-color: #ffffff;
+
+      @media (min-width: $tablet-width) {
+        box-shadow: 0 1px 0 #000000;
+      }
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: 0 4px 4px rgba(#000000, 0.25%), 0 4px 4px rgba(#000000, 0.25%);
+
+      @media (min-width: $tablet-width) {
+        box-shadow: 0 1px 0 #000000;
+      }
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      box-shadow: 0 4px 4px rgba(#000000, 0.25%), 0 4px 4px rgba(#000000, 0.25%);
+
+      @media (min-width: $tablet-width) {
+        box-shadow: 0 1px 0 #000000;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -13,6 +64,28 @@
     padding-left: 130px;
     padding-right: 130px;
   }
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    &--opened {
+      background-color: $basic-color;
+    }
+
+    &--closed .main-nav {
+      display: none;
+    }
+  }
+
+  &--nojs {
+    background-color: $basic-color;
+  }
+
+  &--nojs .page-header__toggle {
+    display: none;
+  }
+
+  &--nojs .main-nav {
+    display: block;
+  }
 }
 
 .page-header__inner {
@@ -20,21 +93,31 @@
   justify-content: space-between;
   align-items: center;
   min-height: 66px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: 660px;
     min-height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+   margin: 0;
   }
 }
 
-.page-header__logo {
-  margin-left: 20px;
-}
-
 .page-header__toggle {
-  margin-right: 20px;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
 
   @media (min-width: $desktop-width) {
     display: none;

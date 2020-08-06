@@ -15,29 +15,11 @@
 
 .user-post__link {
   display: block;
-  width: 280px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 400px;
-  }
 
   &--main-photo {
     position: relative;
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      height: 509px;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 506px;
-    }
+    max-width: 320px;
 
     &::before {
       content: "Панорама дня";
@@ -64,6 +46,14 @@
         right: 130px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      max-width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+     max-width: 1200px;
+    }
   }
 }
 
@@ -73,23 +63,11 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 300px;
-  }
 
-  @media (min-width: $desktop-width) {
-    height: 400px;
   }
 
   &--main-photo {
     width: 100%;
-
-    @media (min-width: $tablet-width) {
-      height: 509px;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 506px;
-    }
   }
 }
 
@@ -110,6 +88,7 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     min-height: 155px;
+    margin: 0;
     padding-top: 23px;
     padding-right: 30px;
     padding-bottom: 24px;
@@ -123,7 +102,7 @@
       flex-flow: row wrap;
       justify-content: space-between;
       width: 620px;
-      margin: 0 auto;
+
     }
 
     @media (min-width: $desktop-width) {

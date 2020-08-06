@@ -10,7 +10,7 @@
 
 <body class="page__body">
 
-  <header class="page__header page-header page-header--opened">
+  <header class="page__header page-header page-header--closed page-header--nojs">
     <div class="page-header__inner">
       <a class="page-header__logo logo" href="index.html">
         <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
@@ -53,9 +53,14 @@
       <h2 class="visually-hidden">Список фотографий от пользователей приложения PINK</h2>
 
       <article class="user-post user-post--main-photo">
+
         <a class="user-post__link user-post__link--main-photo" href="#">
-          <img class="user-post__img user-post__img--main-photo" src="img/panorama-mobile@1x.jpg" width="320"
-            height="137" alt="Вид с большого моста над горной рекой">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="user-post__img user-post__img--main-photo" src="img/panorama-mobile@1x.jpg"
+              alt="Вид с большого моста над горной рекой">
+          </picture>
         </a>
         <div class="user-post__comment user-post__comment--main-photo">
           <div class="user-post__author">
@@ -76,8 +81,12 @@
       <div class="photo-content__inner">
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-              alt="Белая машина на парковке, которую снимают на камеру">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-car-mobile@1x.jpg"
+                alt="Белая машина на парковке, которую снимают на камеру">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -96,8 +105,12 @@
 
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Набор инструментов для барабанщика">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg"
+                alt="Набор инструментов для барабанщика">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -115,8 +128,11 @@
 
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Кубанская ярмарка овощей и фруктов под большим навесом">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" alt="Стеклянные окна">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -135,8 +151,12 @@
 
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-              alt="Кубанская ярмарка овощей и фруктов под большим навесом">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg"
+                alt="Кубанская ярмарка овощей и фруктов под большим навесом">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -155,8 +175,12 @@
 
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-              alt="Человек сидит в горах на камне и смотрит вокруг - все зеленое">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg"
+                alt="Человек сидит в горах на камне и смотрит вокруг - все зеленое">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -175,8 +199,12 @@
 
         <article class="user-post">
           <a class="user-post__link" href="#">
-            <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-              alt="Самолет в небе на фоне заходящего солнца">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg"
+                alt="Самолет в небе на фоне заходящего солнца">
+            </picture>
           </a>
           <div class="user-post__comment">
             <div class="user-post__author">
@@ -201,8 +229,11 @@
       <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
         <label class="editor-form__upload-photo upload-photo">
           <input class="upload-photo__upload-button" type="file" name="upload-photo">
-          <img class="upload-photo__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
-            alt="Загрузить фото">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <img class="upload-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+          </picture>
         </label>
 
         <div class="editor-form__filter">
@@ -277,7 +308,7 @@
     </div>
   </footer>
 
-
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

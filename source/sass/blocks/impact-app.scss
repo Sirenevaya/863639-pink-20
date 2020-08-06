@@ -1,4 +1,8 @@
 .impact-app {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
   }
@@ -15,13 +19,10 @@
   padding-bottom: 54px;
   text-align: left;
 
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
     max-width: 940px;
+    padding-bottom: 67px;
   }
 }
 
