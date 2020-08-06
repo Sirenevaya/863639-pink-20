@@ -117,9 +117,9 @@
 .features-app__img {
   display: none;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;
