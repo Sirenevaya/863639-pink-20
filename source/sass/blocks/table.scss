@@ -9,10 +9,40 @@
 
 .table__cell {
   padding: 0;
+  padding-top: 15px;
   padding-right: 20px;
+  padding-bottom: 14px;
   padding-left: 20px;
   border-width: 2px;
   border-style: solid;
   border-color: #e5e5e5;
   border-top: none;
+  text-align: left;
+
+  @media (max-width: $mobile-width-only) {
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 7px;
+
+    &:first-child {
+      padding-left: 16px;
+      border-top-width: 2px;
+      border-top-style: solid;
+      border-top-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-bottom: 15px;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
 }

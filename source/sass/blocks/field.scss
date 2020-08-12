@@ -1,24 +1,47 @@
 .field {
-  margin-bottom: 23px;
-  font-size: 18px;
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    &--personal-data {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--contact-data {
+      flex-direction: column-reverse;
+      margin: 0 auto;
+    }
+  }
 }
 
 .field__caption {
   display: block;
   margin-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
   text-align: left;
   color: $special-color;
+
+  @media (min-width: $tablet-width) {
+    &--personal-data {
+      margin: 0;
+      margin-right: 20px;
+    }
+
+    &--contact-data {
+      margin-bottom: 0;
+      margin-top: 10px;
+      margin-left: 18px;
+    }
+  }
 }
 
 .field__data {
   display: block;
-  width: 276px;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
@@ -28,4 +51,55 @@
   border-style: solid;
   border-color: #e5e5e5;
   border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    &--contact-data {
+      width: 500px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contact-data {
+      width: 375px;
+    }
+  }
+}
+
+.field-group {
+  @media (min-width: $desktop-width) {
+    &--checkbox:nth-child(2),
+    &--checkbox:nth-child(4),
+    &--checkbox:nth-child(6) {
+      order: 2;
+    }
+  }
+}
+
+.field-group__caption {
+  &--checkbox {
+    padding-left: 57px;
+  }
+
+  &--radio {
+    position: relative;
+    display: block;
+    padding-left: 68px;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--checkbox {
+      padding-left: 117px;
+    }
+
+    &--radio {
+      padding-left: 120px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--checkbox {
+      padding-left: 57px;
+    }
+  }
 }

@@ -50,9 +50,11 @@
 
     @media (min-width: $tablet-width) {
       min-width: 260px;
+      margin-bottom: 24px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 0;
       min-width: 183px;
     }
   }
@@ -86,7 +88,7 @@
   &--green {
     padding-top: 14px;
     padding-bottom: 15px;
-    min-width: 276px;
+    min-width: 280px;
     line-height: 30px;
     text-transform: uppercase;
     background-color: #2aab6d;
@@ -103,13 +105,13 @@
     }
 
     @media (min-width: $tablet-width) {
-      min-width: 296px;
+      min-width: 300px;
     }
   }
 
   &--wide {
     @media (min-width: $desktop-width) {
-      min-width: 456px;
+      min-width: 460px;
     }
   }
 }
