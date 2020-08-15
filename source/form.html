@@ -11,59 +11,64 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--closed page-header--nojs">
-    <div class="page-header__inner">
-      <a class="page-header__logo logo" href="index.html">
-        <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-          alt="Логотип сайта мобильного приложения PINK">
-      </a>
+    <div class="page-header__header-inner">
+      <div class="page-header__inner">
+        <a class="page-header__logo logo" href="index.html">
+          <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+            alt="Логотип сайта мобильного приложения PINK">
+        </a>
 
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--current">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="page-header__main-nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link  main-nav__link--current">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page__main page-main">
 
-    <div class="intro">
+    <div class="intro intro--short">
       <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="intro__text">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
+      <div class="intro__text-inner">
+        <p class="intro__text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span
+            class="intro__text-item">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
     </div>
 
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="POST">
 
       <div class="contest-form__group contest-form__group--personal-data">
         <fieldset class="contest-form__fieldset contest-form__fieldset--personal-data">
-          <ul class="contest-form__list contest-form__list--personal-data">
-            <li class="contest-form__item field field--personal-data">
-              <label class="field__caption field__caption--personal-data">Фамилия:</label>
+          <ul class="contest-form__list">
+            <li class="contest-form__item field field--inline">
+              <label class="field__caption">Фамилия:</label>
               <input class="field__data" type="text" name="last-name" placeholder="Укажите фамилию *" required>
             </li>
-            <li class="contest-form__item field field--personal-data">
-              <label class="field__caption field__caption--personal-data">Имя:</label>
+            <li class="contest-form__item field field--inline">
+              <label class="field__caption">Имя:</label>
               <input class="field__data" type="text" name="name" placeholder="Введите ваше имя *" required>
             </li>
-            <li class="contest-form__item field field--personal-data">
-              <label class="field__caption field__caption--personal-data">Отчество:</label>
+            <li class="contest-form__item field field--inline">
+              <label class="field__caption">Отчество:</label>
               <input class="field__data" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </li>
           </ul>
@@ -75,42 +80,42 @@
           <legend class="contest-form__group-title">Ваши безбашенные достижения в путешествии</legend>
 
           <ul class="contest-form__list contest-form__list--checkbox">
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Сделал селфи с акулой" checked>
                 Сделал селфи с акулой
               </label>
             </li>
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Обгорел на пляже" checked>
                 Обгорел на пляже
               </label>
             </li>
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Видел Чака Норрис">
                 Видел Чака Норриса
               </label>
             </li>
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Накупил сувениров">
                 Накупил сувениров
               </label>
             </li>
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Удержал башню" checked>
                 Удержал башню
               </label>
             </li>
-            <li class="contest-form__item field-group field-group--checkbox">
+            <li class="contest-form__item field-group">
               <label class="field-group__caption field-group__caption--checkbox">
                 <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
                   value="Разгромил отель">
@@ -171,7 +176,7 @@
 
       <div class="contest-form__group contest-form__group--textarea">
         <fieldset class="contest-form__fieldset contest-form__fieldset--textarea">
-          <legend class="contest-form__group-title contest-form__group-title--textarea">Опишите свои эмоции</legend>
+          <legend class="contest-form__group-title">Опишите свои эмоции</legend>
 
           <textarea class="contest-form__textarea" name="message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

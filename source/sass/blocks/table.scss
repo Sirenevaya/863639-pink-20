@@ -19,12 +19,6 @@
   border-top: none;
   text-align: left;
 
-  @media (max-width: $mobile-width-only) {
-    &:first-child {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 7px;

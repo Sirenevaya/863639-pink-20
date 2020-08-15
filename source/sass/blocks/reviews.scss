@@ -1,13 +1,15 @@
 .reviews {
   position: relative;
-  margin-top: -39px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  margin-top: -44px;
+  padding-top: 41px;
+  padding-bottom: 30px;
   background-color: #ffffff;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+    padding-top: 34px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +27,7 @@
     flex-direction: column-reverse;
     align-items: center;
     width: 620px;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,9 +65,10 @@
 .reviews__text {
   margin: 0;
   margin-top: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     font-size: 18px;
   }
 

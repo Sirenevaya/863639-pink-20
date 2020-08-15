@@ -6,11 +6,12 @@
 
 .features-app__header {
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 35px;
+    padding-top: 47px;
+    padding-bottom: 25px;
   }
 }
 
@@ -45,6 +46,7 @@
 .features-app__inner {
   max-width: 280px;
   margin: 0 auto;
+  padding-top: 82px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -52,6 +54,7 @@
     justify-content: space-between;
     max-width: 620px;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,10 +64,9 @@
 }
 
 .features-app__list {
-  padding-top: 53px;
-
   @media (min-width: $tablet-width) {
     width: 310px;
+    margin-top: 61px;
     text-align: left;
   }
 
@@ -77,7 +79,7 @@
 }
 
 .features-app__item {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;

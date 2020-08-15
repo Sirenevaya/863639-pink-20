@@ -1,4 +1,6 @@
 .contest-form {
+  max-width: 940px;
+  margin: 0 auto;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
@@ -8,8 +10,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
-    max-width: 940px;
-    margin: 0 auto;
   }
 }
 
@@ -73,8 +73,8 @@
 }
 
 .contest-form__fieldset {
-  max-width: 280px;
-  margin: 0 auto;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 0;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -88,7 +88,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 620px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &--personal-data {
+      padding: 0;
+      padding-right: 6px;
+    }
 
     &--checkbox {
       padding-top: 5px;
@@ -101,8 +107,9 @@
     }
 
     &--radio {
+      padding: 0;
       padding-top: 6px;
-      padding-bottom: 58px;
+      padding-bottom: 45px;
     }
 
     &--textarea {
@@ -112,21 +119,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
-
-    &--personal-data {
-      width: 435px;
-    }
-
-    &--radio {
-      width: 435px;
-    }
+    margin: 0;
 
     &--contact-data {
       padding-top: 13px;
-      padding-right: 36px;
       padding-bottom: 13px;
-      padding-left: 38px;
     }
 
     &--checkbox {
@@ -163,12 +160,6 @@
       margin-bottom: 20px;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    &--textarea {
-      margin-bottom: 40px;
-    }
-  }
 }
 
 .contest-form__list {
@@ -187,9 +178,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    &--personal-data {
-      gap: 50px;
-    }
+    gap: 50px;
 
     &--checkbox {
       gap: 52px;
@@ -205,12 +194,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--personal-data {
-      gap: 51px;
-    }
+    gap: 51px;
 
     &--contact-data {
       grid-template-columns: 1fr 1fr;
+      gap: 74px;
     }
 
     &--checkbox {
@@ -224,7 +212,7 @@
 }
 
 .contest-form__textarea {
-  width: 280px;
+  width: 100%;
   min-height: 200px;
   margin-top: -24px;
   padding-top: 13px;
@@ -236,12 +224,10 @@
   border-color: #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     min-height: 193px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 820px;
     min-height: 128px;
   }
 }
@@ -278,7 +264,7 @@
 }
 
 .contest-form__requirement-item {
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }

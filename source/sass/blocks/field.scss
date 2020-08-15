@@ -4,14 +4,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    &--personal-data {
+    &--inline {
       flex-direction: row;
       align-items: center;
     }
 
     &--contact-data {
       flex-direction: column-reverse;
-      margin: 0 auto;
     }
   }
 }
@@ -26,10 +25,8 @@
   color: $special-color;
 
   @media (min-width: $tablet-width) {
-    &--personal-data {
-      margin: 0;
-      margin-right: 20px;
-    }
+    margin: 0;
+    margin-right: 20px;
 
     &--contact-data {
       margin-bottom: 0;
@@ -51,25 +48,13 @@
   border-style: solid;
   border-color: #e5e5e5;
   border-radius: 1px;
-
-  @media (min-width: $tablet-width) {
-    &--contact-data {
-      width: 500px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--contact-data {
-      width: 375px;
-    }
-  }
 }
 
 .field-group {
   @media (min-width: $desktop-width) {
-    &--checkbox:nth-child(2),
-    &--checkbox:nth-child(4),
-    &--checkbox:nth-child(6) {
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
       order: 2;
     }
   }

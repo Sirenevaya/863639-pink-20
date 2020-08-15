@@ -21,7 +21,7 @@
 
 .price-table__cell {
   padding-top: 10px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   text-align: center;
   background-color: $basic-color;
   border-width: 2px;
@@ -40,6 +40,12 @@
     border-right-style: solid;
     border-right-color: $basic-color;
     border-radius: 0 1px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--show-tablet {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

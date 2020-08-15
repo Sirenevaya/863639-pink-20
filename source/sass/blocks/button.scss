@@ -16,9 +16,11 @@
   border-radius: 29px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $special-color;
     background-color: #ffffff;
+    outline: none;
   }
 
   &:active {
@@ -39,7 +41,8 @@
     border-color: $special-color;
     border-radius: 30px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #ffffff;
       background-color: $special-color;
     }
@@ -64,7 +67,8 @@
     border-color: rgba($basic-color, 0.1%);
     border-radius: 30px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: rgba($basic-color, 0.3%);
       background-color: transparent;
       border-color: rgba($basic-color, 0.3%);
@@ -95,7 +99,8 @@
     border: none;
     border-radius: 1px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #ffffff;
       background-color: #1c9b5e;
     }

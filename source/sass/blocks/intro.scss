@@ -1,68 +1,83 @@
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 421px;
   margin-top: -67px;
   padding-top: 90px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: top;
 
   @media (min-width: 321px) {
-    background-size: 100% 462px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 672px;
+    min-height: 729px;
     margin-top: -110px;
     padding-top: 184px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center;
-    background-size: cover;
+    background-position: center bottom;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 634px;
+    min-height: 645px;
     margin-top: -125px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 15px;
-    background-size: auto;
+  }
+
+  &--short {
+    justify-content: space-between;
+    min-height: 422px;
+    padding-top: 95px;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      min-height: 668px;
+      padding-top: 178px;
+      background-position: top;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 633px;
+      padding-top: 186px;
+    }
   }
 }
 
 .intro__inner {
-  min-height: 650px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 643px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 86px;
+  background-position: 0 87px;
+
+  @media (min-width: 321px) {
+    background-position: center 87px;
+  }
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     width: 660px;
     min-height: 545px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    margin: 0 auto;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: center top;
+    background-position: center bottom;
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
     min-height: 684px;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: 123px bottom;
-    background-size: 848px 645px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 27px bottom;
   }
 }
 
 .intro__title {
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 250px;
+  margin: 0 auto;
   padding-bottom: 28px;
   font-size: 24px;
   font-weight: 300;
@@ -72,6 +87,7 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
+    padding-bottom: 58px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -86,7 +102,7 @@
 
     @media (min-width: $tablet-width) {
       width: 240px;
-      margin-top: 28px;
+      margin-top: 20px;
       margin-left: 50px;
       font-size: 40px;
       line-height: 48px;
@@ -94,6 +110,8 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 41px;
+      margin-bottom: 30px;
+      margin-left: 40px;
       padding-bottom: 5px;
       font-size: 50px;
       line-height: 68px;
@@ -101,31 +119,47 @@
   }
 }
 
-.intro__text {
-  margin: 0;
-  padding-left: 35px;
-  padding-right: 35px;
+.intro__text-inner {
   padding-top: 44px;
-  padding-bottom: 56px;
-  line-height: 30px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 100px;
-    padding-bottom: 85px;
-    font-size: 18px;
-    line-height: 30px;
+    padding-top: 91px;
+    padding-right: 55px;
+    padding-bottom: 77px;
+    padding-left: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 97px;
+    padding-bottom: 72px;
   }
 }
 
-.intro__img {
-  display: block;
+.intro__text {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
+  }
+}
+
+.intro__text-item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: baseline;
+  }
 }
