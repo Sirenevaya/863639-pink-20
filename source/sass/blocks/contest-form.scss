@@ -1,21 +1,83 @@
 .contest-form {
+  max-width: 940px;
+  margin: 0 auto;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contest-form__group {
-  padding-top: 38px;
+  @media (max-width: $mobile-width-only) {
+    &--grey-back {
+      padding-top: 42px;
+      padding-bottom: 43px;
+      background-color: #f2f2f2;
+    }
+  }
 
   &--personal-data {
     padding-top: 5px;
+    padding-bottom: 44px;
+  }
+
+  &--contact-data {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  &--textarea {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--checkbox {
+      order: 2;
+    }
+
+    &--contact-data {
+      order: 1;
+    }
+
+    &--textarea {
+      order: 4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--personal-data {
+      padding-top: 12px;
+    }
+
+    &--contact-data {
+      grid-column: 1 / -1;
+    }
+
+    &--checkbox {
+      grid-column: 1 / -1;
+    }
+
+    &--textarea {
+      grid-column: 1 / -1;
+    }
   }
 }
 
 .contest-form__fieldset {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
   padding: 0;
-  padding-bottom: 20px;
   border: 2px solid #e5e5e5;
+  border-radius: 1px;
 
   @media (max-width: $mobile-width-only) {
     border: none;
@@ -24,32 +86,133 @@
   &--personal-data {
     border: none;
   }
-}
 
-.contest-form__group--grey-back {
-  @media (max-width: $mobile-width-only) {
-    background-color: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &--personal-data {
+      padding: 0;
+      padding-right: 6px;
+    }
+
+    &--checkbox {
+      padding-top: 5px;
+      padding-bottom: 53px;
+    }
+
+    &--contact-data {
+      padding-top: 15px;
+      padding-bottom: 27px;
+    }
+
+    &--radio {
+      padding: 0;
+      padding-top: 6px;
+      padding-bottom: 45px;
+    }
+
+    &--textarea {
+      padding-top: 19px;
+      padding-bottom: 43px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    &--contact-data {
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    &--checkbox {
+      padding-bottom: 58px;
+    }
+
+    &--textarea {
+      padding-bottom: 35px;
+    }
   }
 }
 
 .contest-form__group-title {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
 
-  &--contact-data {
-    @media (max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
+    &--contact-data {
       display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &--contact-data {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contest-form__list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--checkbox {
+    gap: 47px;
+  }
+
+  &--radio {
+    gap: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 50px;
+
+    &--checkbox {
+      gap: 52px;
+    }
+
+    &--contact-data {
+      gap: 28px;
+    }
+
+    &--radio {
+      gap: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 51px;
+
+    &--contact-data {
+      grid-template-columns: 1fr 1fr;
+      gap: 74px;
+    }
+
+    &--checkbox {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 58px;
+      row-gap: 52px;
+      width: 820px;
+      margin: 0 auto;
     }
   }
 }
 
 .contest-form__textarea {
-  width: 280px;
+  width: 100%;
   min-height: 200px;
   margin-top: -24px;
   padding-top: 13px;
@@ -59,10 +222,51 @@
   border-width: 2px;
   border-style: solid;
   border-color: #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    min-height: 193px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 128px;
+  }
 }
 
 .contest-form__button {
-  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 34px;
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    width: 940px;
+  }
+}
+
+.contest-form__requirement {
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.contest-form__requirement-item {
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .contest-form__star {

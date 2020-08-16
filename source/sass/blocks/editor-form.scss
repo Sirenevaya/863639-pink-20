@@ -1,13 +1,27 @@
 .editor-form {
   padding-top: 20px;
   padding-bottom: 41px;
-  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    padding-bottom: 57px;
+  }
 }
 
-.editor-form__filter {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba($basic-color, 0.1%);
+.editor-form__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .editor-form__tools {
@@ -15,17 +29,87 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 194px;
+  width: 200px;
   margin: 0 auto;
-  margin-top: 42px;
   padding: 0;
-  padding-bottom: 27px;
+  padding-top: 42px;
+  padding-bottom: 34px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+.editor-form__tool {
+  @media (min-width: $tablet-width) {
+    width: 275px;
+  }
 }
 
 .editor-form__button-tool {
+  color: rgba($basic-color, 0.3%);
   border: none;
   background-color: transparent;
+
+  &:hover {
+    color: rgba($basic-color, 0.5%);
+  }
+
+  &--current {
+    color: $special-color;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.editor-form__icon {
+  fill: currentColor;
+
+  @media (min-width: $tablet-width) {
+    color: $special-color;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.editor-form__ranges {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba($basic-color, 0.1%);
 }
 
 .editor-form__range {
@@ -33,5 +117,13 @@
 }
 
 .editor-form__buttons {
+  width: 280px;
+  margin: 0 auto;
   margin-top: 38px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+  }
 }

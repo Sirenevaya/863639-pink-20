@@ -4,21 +4,31 @@
 
 .download-app__inner {
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   background-color: #1d2631;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
     margin-left: 20px;
+    padding: 0;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
   }
 }
 
 .download-app__button {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 }
 
@@ -32,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin-top: 33px;
     font-size: 18px;
   }
 

@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   max-width: 620px;
   margin: 0 auto;
   padding-top: 54px;
@@ -62,6 +61,8 @@
 
 .impact-app__description {
   width: 300px;
+  margin-top: 40px;
+  margin-right: 10px;
 
   @media (min-width: $desktop-width) {
     width: 500px;
@@ -71,11 +72,16 @@
 .impact-app__title {
   width: 200px;
   margin: 0;
-  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 300px;
@@ -85,8 +91,15 @@
 
 .impact-app__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 7px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

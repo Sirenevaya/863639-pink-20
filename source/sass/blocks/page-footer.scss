@@ -17,8 +17,9 @@
 }
 
 .page-footer__logo {
-  display: block;
-  margin-bottom: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
@@ -26,7 +27,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

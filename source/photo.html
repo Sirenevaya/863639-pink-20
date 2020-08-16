@@ -11,42 +11,47 @@
 <body class="page__body">
 
   <header class="page__header page-header page-header--closed page-header--nojs">
-    <div class="page-header__inner">
-      <a class="page-header__logo logo" href="index.html">
-        <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-          alt="Логотип сайта мобильного приложения PINK">
-      </a>
+    <div class="page-header__header-inner">
+      <div class="page-header__inner">
+        <a class="page-header__logo logo" href="index.html">
+          <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+            alt="Логотип сайта мобильного приложения PINK">
+        </a>
 
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="page-header__main-nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page__main page-main">
 
-    <div class="intro">
+    <div class="intro intro--short">
       <h1 class="intro__title">Фотографии<br>пользователей</h1>
-      <p class="intro__text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
+
+      <div class="intro__text-inner">
+        <p class="intro__text">
+          Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
+        </p>
+      </div>
     </div>
 
     <section class="photo-content">
@@ -124,6 +129,7 @@
               <button class="user-post__heart" type="button"></button>
               <span class="user-post__likes-number">Нравится: 666</span>
             </div>
+          </div>
         </article>
 
         <article class="user-post">
@@ -224,52 +230,63 @@
     </section>
 
     <section class="post-photo">
+
       <h2 class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
 
-      <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="editor-form__upload-photo upload-photo">
-          <input class="upload-photo__upload-button" type="file" name="upload-photo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-            <img class="upload-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
-          </picture>
-        </label>
+      <div class="post-photo__inner">
 
-        <div class="editor-form__filter">
-          <ul class="editor-form__tools">
-            <li class="editor-form__tool">
-              <button class="editor-form__button-tool editor-form__button-tool--current" type="button">
-                <img class="editor-form__icon" src="img/icon-editor-crop.svg" width="44" height="44"
-                  alt="Кадрировать фото">
-              </button>
-            </li>
-            <li class="editor-form__tool">
-              <button class="editor-form__button-tool" type="button">
-                <img class="editor-form__icon" src="img/icon-editor-fill.svg" width="48" height="43"
-                  alt="Изменить заливку на фото">
-              </button>
-            </li>
-            <li class="editor-form__tool">
-              <button class="editor-form__button-tool" type="button">
-                <img class="editor-form__icon" src="img/icon-editor-contrast.svg" width="32" height="32"
-                  alt="Изменить контрастность на фото">
-              </button>
-            </li>
-          </ul>
-        </div>
+        <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="editor-form__upload-photo upload-photo">
+            <input class="upload-photo__upload-button" type="file" name="upload-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img class="upload-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+            </picture>
+          </label>
 
-        <div class="editor-form__ranges">
-          <input class="editor-form__range editor-form__range--current" type="range">
-          <input class="editor-form__range" type="range">
-          <input class="editor-form__range" type="range">
-        </div>
 
-        <div class="editor-form__buttons">
-          <button class="button button--upload" type="submit">Запостить</button>
-          <button class="button button--cancel" type="reset">Отмена</button>
-        </div>
-      </form>
+          <div class="editor-form__inner">
+
+            <ul class="editor-form__tools">
+              <li class="editor-form__tool">
+                <button class="editor-form__button-tool editor-form__button-tool--current" type="button"
+                  aria-label="Кадрировать фото">
+                  <svg class="editor-form__icon editor-form__icon--crop" width="44" height="44">
+                    <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="editor-form__tool">
+                <button class="editor-form__button-tool" type="button" aria-label="Изменить заливку на фото">
+                  <svg class="editor-form__icon editor-form__icon--fill" width="48" height="43">
+                    <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="editor-form__tool">
+                <button class="editor-form__button-tool" type="button" aria-label="Изменить контрастность на фото">
+                  <svg class="editor-form__icon editor-form__icon--contrast" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+
+            <div class="editor-form__ranges">
+              <input class="editor-form__range editor-form__range--current" type="range">
+              <input class="editor-form__range" type="range">
+              <input class="editor-form__range" type="range">
+            </div>
+
+            <div class="editor-form__buttons">
+              <button class="button button--upload" type="submit">Запостить</button>
+              <button class="button button--cancel" type="reset">Отмена</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
 
   </main>
