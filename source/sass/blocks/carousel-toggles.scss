@@ -1,0 +1,19 @@
+.carousel-toggles__toggle {
+  width: 6px;
+  height: 6px;
+  margin-left: 7px;
+  margin-right: 8px;
+  padding: 0;
+  background-color: $basic-color;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--current {
+    background-color: transparent;
+    box-shadow: 0 0 0 3px $basic-color;
+    opacity: 1;
+    cursor: default;
+  }
+}

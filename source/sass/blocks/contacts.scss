@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
 }
 
 .contacts__title {
@@ -23,51 +27,59 @@
 
   @media (min-width: $desktop-width) {
     width: 462px;
+    margin-bottom: 40px;
     font-size: 50px;
     line-height: 68px;
   }
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 41px;
     width: 610px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
     width: 940px;
   }
 }
 
 .contacts__item {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 35px;
+
   &--phone {
-    margin-bottom: 14px;
+    margin-bottom: 17px;
   }
 
   &--email {
-    margin-bottom: 18px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 42px;
-    }
+    margin-bottom: 21px;
   }
 
   &--address {
     margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 0;
+      grid-column: 1 / -1;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,20 +104,14 @@
   line-height: 25px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 }
 
-.contacts__link,
-.contacts__address {
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 35px;
-  color: $special-color;
-}
-
 .contacts__link {
+  display: block;
+  margin-top: -2px;
+  color: $special-color;
   text-decoration: none;
 
   &:hover {
@@ -116,14 +122,32 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+}
+
+.contacts__address {
+  margin-top: -3px;
+  font-style: normal;
+  color: $special-color;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+  }
 }
 
 .contacts__map {
   margin: 0;
-  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
   }
 }
 

@@ -1,4 +1,17 @@
 .icon__img {
   display: inline-block;
   vertical-align: middle;
+
+  &--true {
+    fill: #3dc644;
+  }
+
+  &--false {
+    padding-left: 5px;
+    fill: #f25b26;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+  }
 }

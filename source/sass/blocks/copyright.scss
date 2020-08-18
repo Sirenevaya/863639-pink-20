@@ -8,4 +8,18 @@
   padding-right: 10px;
   line-height: 18px;
   color: $basic-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-right: 8px;
+  }
+}
+
+.copyright__link {
+  margin-top: -1px;
+  margin-left: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+  }
 }

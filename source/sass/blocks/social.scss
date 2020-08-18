@@ -27,21 +27,26 @@
     border-color: rgba($basic-color, 0.4%);
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 7px;
+    margin-right: 0;
+  }
 }
 
 .social__icon {
   fill: currentColor;
 
   &--twitter {
-    margin: 17px auto;
+    margin: 16px auto;
   }
 
   &--facebook {
-    margin: 15px auto;
+    margin: 14px auto;
   }
 
   &--youtube {
-    margin-top: 18px;
+    margin-top: 17px;
     margin-left: 5px;
     margin-bottom: 17px;
   }

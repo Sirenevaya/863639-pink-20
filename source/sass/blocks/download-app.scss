@@ -3,7 +3,7 @@
 }
 
 .download-app__inner {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
   background-color: #1d2631;
   z-index: 2;
@@ -21,7 +21,7 @@
 }
 
 .download-app__button {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
@@ -42,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    margin-top: 33px;
+    margin-top: 31px;
     font-size: 18px;
   }
 

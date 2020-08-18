@@ -1,7 +1,6 @@
 .user-post {
   margin: 0 auto;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -60,13 +59,16 @@
 .user-post__img {
   display: block;
 
-
   @media (min-width: $tablet-width) {
     width: 300px;
   }
 
   &--main-photo {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      height: fit-content;
+    }
   }
 }
 
@@ -77,7 +79,7 @@
   margin: auto;
   padding-top: 19px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   padding-left: 17px;
   line-height: 24px;
   color: $basic-color;
@@ -94,29 +96,51 @@
     padding-left: 30px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-left: 27px;
+  }
+
   &--main-photo {
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       flex-flow: row wrap;
       justify-content: space-between;
+      align-items: flex-start;
       width: 620px;
+      min-height: 121px;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 940px;
+      min-height: 97px;
+      padding-left: 27px;
+      padding-top: 25px;
     }
   }
 }
 
+.user-post__author {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+
+  &--main-photo {
+    width: 380px;
+  }
+}
+
 .user-post__author-name {
-  display: inline-block;
-  vertical-align: center;
+  max-width: 250px;
   margin: 0;
+  margin-right: 3px;
   font-size: 14px;
 }
 
 .user-post__time {
+  width: 200px;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -124,11 +148,16 @@
 
 .user-post__message {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   &--main-photo {
     @media (min-width: $tablet-width) {
       order: 2;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
     }
   }
 }
@@ -145,7 +174,6 @@
 
   &--main-photo {
     @media (min-width: $tablet-width) {
-      align-items: baseline;
       margin-top: 0;
       order: 1;
     }
@@ -153,14 +181,20 @@
 }
 
 .user-post__heart {
+  position: relative;
   display: block;
   width: 13px;
   height: 12px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.user-post__heart-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $special-color;
 }
 
 .user-post__likes-number {
@@ -170,6 +204,7 @@
   color: $special-color;
 
   @media (min-width: $tablet-width) {
+    margin-top: 2px;
     margin-left: 0;
     margin-right: 17px;
   }

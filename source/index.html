@@ -14,8 +14,15 @@
     <div class="page-header__header-inner">
       <div class="page-header__inner">
         <a class="page-header__logo logo">
-          <img class="logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта мобильного приложения PINK">
+          <svg class="logo__img logo__img--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo__img logo__img--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo__img logo__img--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
 
         <button class="page-header__toggle" type="button">
@@ -35,7 +42,7 @@
             <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -130,7 +137,7 @@
           <span class="impact-app__img-text">24</span>
         </div>
         <div class="impact-app__description">
-          <h2 class="impact-app__title">Эффект<br>на 24 часа!</h2>
+          <h2 class="impact-app__title">Эффект<br> на 24 часа!</h2>
           <p class="impact-app__text">
             Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения
             длится целые сутки!
@@ -157,9 +164,10 @@
       </div>
 
       <div class="reviews__toggles carousel__toggles carousel-toggles">
-        <button class="carousel-toggles__toggle" type="button">1</button>
-        <button class="carousel-toggles__toggle carousel-toggles__toggle--current" type="button">2</button>
-        <button class="carousel-toggles__toggle" type="button">3</button>
+        <button class="carousel-toggles__toggle carousel-toggles__toggle--current" type="button"
+          aria-label="1"></button>
+        <button class="carousel-toggles__toggle" type="button" aria-label="2"></button>
+        <button class="carousel-toggles__toggle" type="button" aria-label="3"></button>
       </div>
     </section>
 
@@ -194,8 +202,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Розовый фильтр</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -203,17 +212,18 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Розовый фильтр</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
-              </div>
             </td>
             <td class="table__cell">
               <div class="price-table__feature">
                 <p class="price-table__text">Розовый фильтр</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -226,8 +236,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Смайлики</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--false" src="https://via.placeholder.com/27x27" width="27" height="27"
-                    alt="Нет">
+                  <svg class="icon__img icon__img--false" width="37" height="27" aria-label="Нет">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -235,8 +246,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Смайлики</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -244,8 +256,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Смайлики</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -258,8 +271,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Комментарии</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--false" src="https://via.placeholder.com/27x27" width="27" height="27"
-                    alt="Нет">
+                  <svg class="icon__img icon__img--false" width="37" height="27" aria-label="Нет">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -267,8 +281,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Комментарии</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--false" src="https://via.placeholder.com/27x27" width="27" height="27"
-                    alt="Нет">
+                  <svg class="icon__img icon__img--false" width="37" height="27" aria-label="Нет">
+                    <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -276,8 +291,9 @@
               <div class="price-table__feature">
                 <p class="price-table__text">Комментарии</p>
                 <div class="price-table__icon icon">
-                  <img class="icon__img icon__img--true" src="https://via.placeholder.com/31x21" width="31" height="21"
-                    alt="Да">
+                  <svg class="icon__img icon__img--true" width="31" height="21" aria-label="Да">
+                    <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </div>
               </div>
             </td>
@@ -285,10 +301,11 @@
         </tbody>
       </table>
 
-      <div class="price-app__toggles carousel-toggles">
-        <button class="carousel-toggles__toggle" type="button">1</button>
-        <button class="carousel-toggles__toggle carousel-toggles__toggle--current" type="button">2</button>
-        <button class="carousel-toggles__toggle" type="button">3</button>
+      <div class="price-app__toggles carousel__toggles carousel-toggles">
+        <button class="carousel-toggles__toggle" type="button aria-label=" 1"></button>
+        <button class="carousel-toggles__toggle carousel-toggles__toggle--current" type="button"
+          aria-label="2"></button>
+        <button class="carousel-toggles__toggle" type="button" aria-label="3"></button>
       </div>
     </section>
 
@@ -324,9 +341,14 @@
 
   <footer class="page__footer page-footer">
     <a class="page-footer__logo logo">
-      <img class="logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40"
-        alt="Логотип сайта мобильного приложения PINK">
+      <svg class="logo__img logo__img--mobile-footer" width="145" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="logo__img logo__img--desktop-footer" width="147" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+      </svg>
     </a>
+
 
     <div class="page-footer__social social">
       <ul class="social__list">

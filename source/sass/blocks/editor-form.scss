@@ -32,8 +32,8 @@
   width: 200px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 42px;
-  padding-bottom: 34px;
+  padding-top: 29px;
+  padding-bottom: 67px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -51,6 +51,9 @@
 }
 
 .editor-form__button-tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba($basic-color, 0.3%);
   border: none;
   background-color: transparent;

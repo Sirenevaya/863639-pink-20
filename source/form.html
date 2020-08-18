@@ -14,8 +14,15 @@
     <div class="page-header__header-inner">
       <div class="page-header__inner">
         <a class="page-header__logo logo" href="index.html">
-          <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта мобильного приложения PINK">
+          <svg class="logo__img logo__img--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo__img logo__img--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo__img logo__img--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
 
         <button class="page-header__toggle" type="button">
@@ -35,7 +42,7 @@
             <a class="main-nav__link  main-nav__link--current">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -46,12 +53,10 @@
 
     <div class="intro intro--short">
       <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <div class="intro__text-inner">
-        <p class="intro__text">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span
-            class="intro__text-item">Пожалуйста, заполните форму ниже:</span>
-        </p>
-      </div>
+    </div>
+    <div class="intro-text">
+      <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
+        карту! <span class="intro__text-item">Пожалуйста, заполните форму ниже:</span></p>
     </div>
 
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -196,8 +201,12 @@
 
   <footer class="page__footer page-footer">
     <a class="page-footer__logo logo" href="index.html">
-      <img class="logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40"
-        alt="Логотип сайта мобильного приложения PINK">
+      <svg class="logo__img logo__img--mobile-footer" width="145" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="logo__img logo__img--desktop-footer" width="147" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+      </svg>
     </a>
 
     <div class="page-footer__social social">
