@@ -1,14 +1,33 @@
+.logo {
+  color: #ffffff;
+
+  &--footer {
+    color: $basic-color;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $special-color;
+  }
+
+  &[href]:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--footer[href]:active {
+    color: $basic-color;
+    opacity: 0.3;
+  }
+}
+
 .logo__img {
   display: inline-block;
   vertical-align: middle;
-
-  &--mobile {
-    fill: #ffffff;
-  }
+  fill: currentColor;
 
   &--tablet,
-  &--desktop,
-  &--desktop-footer {
+  &--desktop {
     display: none;
   }
 
@@ -32,11 +51,6 @@
     &--desktop {
       display: inline-block;
       vertical-align: super;
-    }
-
-
-    &--desktop-footer {
-      display: inline-block;
     }
   }
 }
