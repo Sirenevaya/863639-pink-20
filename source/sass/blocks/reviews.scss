@@ -13,11 +13,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 174px;
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 73px;
-    background-size: 79px 63px;
+    padding-top: 72px;
+  }
+}
+
+.reviews__icon {
+  fill: #efefef;
+
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -36,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     width: 688px;
+    margin-top: 29px;
   }
 }
 

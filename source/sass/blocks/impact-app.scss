@@ -27,6 +27,7 @@
 }
 
 .impact-app__img {
+  position: relative;
   padding-top: 73px;
   padding-right: 46px;
   padding-bottom: 67px;
@@ -38,6 +39,38 @@
     width: 298px;
     height: 345px;
     padding-top: 110px;
+  }
+}
+
+.impact-app__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--icon-timer {
+    width: 238px;
+    height: 276px;
+    fill: #dedede;
+
+    @media (min-width: $desktop-width) {
+      width: 298px;
+      height: 345px;
+    }
+  }
+
+  &--icon-editor-diagram-fill {
+    top: 55px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    fill: $special-color;
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+      left: 23px;
+      width: 252px;
+      height: 252px;
+    }
   }
 }
 
