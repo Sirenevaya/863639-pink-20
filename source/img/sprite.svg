@@ -132,4 +132,10 @@
 <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
 </g>
 </symbol>
+<symbol id="bg-triangle-white" viewBox="0 0 1200 94.074" preserveAspectRatio="xMidYMin">
+<polygon points="1200,0 0,0 0,94.074 "/>
+</symbol>
+<symbol id="bg-triangle-white-footer" viewBox="0 0 595.28 61.905" preserveAspectRatio="xMidYMin">
+<polygon points="297.64,61.905 0,0 595.28,0 "/>
+</symbol>
 </svg>

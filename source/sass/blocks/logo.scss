@@ -27,7 +27,8 @@
   fill: currentColor;
 
   &--tablet,
-  &--desktop {
+  &--desktop,
+  &--desktop-footer {
     display: none;
   }
 
@@ -51,6 +52,11 @@
     &--desktop {
       display: inline-block;
       vertical-align: super;
+    }
+
+    &--desktop-footer {
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }

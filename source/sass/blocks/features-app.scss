@@ -49,22 +49,22 @@
 }
 
 .features-app__inner {
-  max-width: 280px;
-  margin: 0 auto;
+  position: relative;
   padding-top: 83px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 620px;
-    margin: 0 auto;
+    justify-content: center;
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column-reverse;
-    max-width: 960px;
+    margin: 0 auto;
     padding-top: 6px;
   }
 }
@@ -73,15 +73,15 @@
   @media (min-width: $tablet-width) {
     width: 310px;
     margin-top: 61px;
+    margin-left: 42px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 932px;
+    width: 930px;
     margin: 0 auto;
-    margin-top: 25px;
     text-align: center;
   }
 }
@@ -104,7 +104,7 @@
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 56px;
   }
 }
 

@@ -98,7 +98,6 @@
 
 .page-header__header-inner {
   @media (min-width: $tablet-width) {
-    max-width: 940px;
     margin: 0 auto;
   }
 
@@ -120,6 +119,10 @@
   border: none;
   cursor: pointer;
   z-index: 2;
+
+  &:focus {
+    outline: auto;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;

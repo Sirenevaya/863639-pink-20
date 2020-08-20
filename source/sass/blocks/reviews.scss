@@ -20,26 +20,26 @@
 .reviews__icon {
   fill: #efefef;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }
 
 .reviews__item {
-  width: 280px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
     align-items: center;
-    width: 620px;
     margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 688px;
+    width: 800px;
     margin-top: 29px;
   }
 }

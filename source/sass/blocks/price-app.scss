@@ -1,8 +1,10 @@
 .price-app {
+  position: relative;
   overflow: hidden;
   padding-top: 101px;
   padding-bottom: 38px;
   background-color: #f2f2f2;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     padding-top: 99px;
