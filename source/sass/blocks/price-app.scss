@@ -1,11 +1,26 @@
 .price-app {
+  position: relative;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 38px;
   background-color: #f2f2f2;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding-top: 98px;
+    padding-top: 99px;
     padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
+    padding-bottom: 96px;
+  }
+}
+
+.price-app__toggles {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }

@@ -13,6 +13,11 @@
     padding-top: 47px;
     padding-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
 }
 
 .features-app__text {
@@ -44,22 +49,23 @@
 }
 
 .features-app__inner {
-  max-width: 280px;
-  margin: 0 auto;
-  padding-top: 82px;
+  position: relative;
+  padding-top: 83px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 620px;
-    margin: 0 auto;
+    justify-content: center;
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column-reverse;
-    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 6px;
   }
 }
 
@@ -67,19 +73,21 @@
   @media (min-width: $tablet-width) {
     width: 310px;
     margin-top: 61px;
+    margin-left: 42px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    width: 930px;
+    margin: 0 auto;
     text-align: center;
   }
 }
 
 .features-app__item {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
@@ -94,28 +102,35 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 56px;
   }
 }
 
 .features-app__img {
   display: none;
-  width: 157px;
-  height: 320px;
+  width: 155px;
+  height: 330px;
   margin: 0 auto;
 
   &--show-all-resolutions {
     display: block;
+    padding-top: 10px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 268px;
-    height: 481px;
+    height: 490px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 292px;
+    width: 300px;
     height: 302px;
     margin: 0;
   }
@@ -142,12 +157,13 @@
 
 .features-app__description {
   margin: 0;
-  margin-top: 13px;
+  margin-top: 12px;
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
     width: 249px;
-    margin: 35px auto;
+    margin: 0 auto;
+    margin-top: 22px;
     font-size: 18px;
     line-height: 30px;
   }

@@ -14,8 +14,15 @@
     <div class="page-header__header-inner">
       <div class="page-header__inner">
         <a class="page-header__logo logo" href="index.html">
-          <img class=" logo__img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта мобильного приложения PINK">
+          <svg class="logo__img logo__img--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo__img logo__img--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo__img logo__img--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
 
         <button class="page-header__toggle" type="button">
@@ -35,7 +42,7 @@
             <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -46,12 +53,10 @@
 
     <div class="intro intro--short">
       <h1 class="intro__title">Фотографии<br>пользователей</h1>
-
-      <div class="intro__text-inner">
-        <p class="intro__text">
-          Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
-        </p>
-      </div>
+    </div>
+    <div class="intro-text">
+      <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как
+        не хватает ваших?</p>
     </div>
 
     <section class="photo-content">
@@ -68,16 +73,20 @@
           </picture>
         </a>
         <div class="user-post__comment user-post__comment--main-photo">
-          <div class="user-post__author">
+          <div class="user-post__author user-post__author--main-photo">
             <h3 class="user-post__author-name">Анна</h3>
-            <time class="user-post__time" datetime="2020-07-18T15:00">(5 минут назад)</time>
+            <time class="user-post__time user-post__time--main-photo" datetime="2020-07-18T15:00">(5 минут назад)</time>
           </div>
           <p class="user-post__message user-post__message--main-photo">
             Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
             вопросы!
           </p>
           <div class="user-post__likes user-post__likes--main-photo">
-            <button class="user-post__heart" type="button"></button>
+            <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+              <svg class="user-post__heart-icon" width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </button>
             <span class="user-post__likes-number">Нравится: 215</span>
           </div>
         </div>
@@ -102,7 +111,11 @@
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 356</span>
             </div>
           </div>
@@ -126,7 +139,11 @@
               Соседи будут рады!
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 666</span>
             </div>
           </div>
@@ -149,7 +166,11 @@
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 215</span>
             </div>
           </div>
@@ -173,7 +194,11 @@
               Самая кубанская в мире!
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 4</span>
             </div>
           </div>
@@ -197,7 +222,11 @@
               Где снег-то?
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 150</span>
             </div>
           </div>
@@ -221,7 +250,11 @@
               Всем GM и взаимные лайки!
             </p>
             <div class="user-post__likes">
-              <button class="user-post__heart" type="button"></button>
+              <button class="user-post__heart" type="button" aria-label="Кнопка нравится">
+                <svg class="user-post__heart-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               <span class="user-post__likes-number">Нравится: 2560</span>
             </div>
           </div>
@@ -292,9 +325,13 @@
   </main>
 
   <footer class="page__footer page-footer">
-    <a class="page-footer__logo logo" href="index.html">
-      <img class="logo__img" src="img/logo-pink-blue-mobile.svg" width="145" height="40"
-        alt="Логотип сайта мобильного приложения PINK">
+    <a class="page-footer__logo logo logo--footer" href="index.html">
+      <svg class="logo__img logo__img--mobile-footer" width="145" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="logo__img logo__img--desktop-footer" width="147" height="40">
+        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+      </svg>
     </a>
 
     <div class="page-footer__social social">

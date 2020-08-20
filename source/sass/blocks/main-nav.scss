@@ -42,13 +42,18 @@
   border-bottom-style: solid;
   border-bottom-color: #000000;
 
-  &:hover {
-    color: #d22856;
+  &:hover,
+  &:focus {
+    color: $special-color;
   }
 
   &:active {
-    color: #ffffff;
+    color: $special-color;
     opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 
   &--current {

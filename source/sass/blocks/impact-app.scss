@@ -21,28 +21,56 @@
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
     max-width: 940px;
+    padding-top: 32px;
     padding-bottom: 67px;
   }
 }
 
 .impact-app__img {
-  padding-top: 67px;
+  position: relative;
+  padding-top: 73px;
   padding-right: 46px;
   padding-bottom: 67px;
   padding-left: 46px;
   width: 238px;
   height: 276px;
-  background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-size: 202px 202px, 238px 276px;
-  background-position: 19px 55px, 0 0;
 
   @media (min-width: $desktop-width) {
     width: 298px;
     height: 345px;
     padding-top: 110px;
-    background-size: 252px 252px, 298px 345px;
-    background-position: 22px 68px, 0 0;
+  }
+}
+
+.impact-app__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--icon-timer {
+    width: 238px;
+    height: 276px;
+    fill: #dedede;
+
+    @media (min-width: $desktop-width) {
+      width: 298px;
+      height: 345px;
+    }
+  }
+
+  &--icon-editor-diagram-fill {
+    top: 55px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    fill: $special-color;
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+      left: 23px;
+      width: 252px;
+      height: 252px;
+    }
   }
 }
 
@@ -61,11 +89,13 @@
 
 .impact-app__description {
   width: 300px;
-  margin-top: 40px;
+  margin-top: 43px;
   margin-right: 10px;
 
   @media (min-width: $desktop-width) {
     width: 500px;
+    margin-top: 97px;
+    margin-right: 70px;
   }
 }
 
@@ -96,6 +126,9 @@
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
+    margin-top: 24px;
+    margin-bottom: 30px;
+
     & br {
       display: none;
     }

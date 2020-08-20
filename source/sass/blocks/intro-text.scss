@@ -1,0 +1,48 @@
+.intro-text {
+  padding-top: 44px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 91px;
+    padding-right: 55px;
+    padding-bottom: 77px;
+    padding-left: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
+}
+
+.intro__text {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+.intro__text-item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+}
