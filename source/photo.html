@@ -267,8 +267,10 @@
       <h2 class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
 
       <div class="post-photo__inner">
-
         <form class="post-photo__form editor-form" action="https://echo.htmlacademy.ru" method="POST">
+
+
+
           <label class="editor-form__upload-photo upload-photo">
             <input class="upload-photo__upload-button" type="file" name="upload-photo">
             <picture>
@@ -281,36 +283,46 @@
 
           <div class="editor-form__inner">
 
-            <ul class="editor-form__tools">
-              <li class="editor-form__tool">
-                <button class="editor-form__button-tool editor-form__button-tool--current" type="button"
-                  aria-label="Кадрировать фото">
-                  <svg class="editor-form__icon editor-form__icon--crop" width="44" height="44">
-                    <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="editor-form__tool">
-                <button class="editor-form__button-tool" type="button" aria-label="Изменить заливку на фото">
-                  <svg class="editor-form__icon editor-form__icon--fill" width="48" height="43">
-                    <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="editor-form__tool">
-                <button class="editor-form__button-tool" type="button" aria-label="Изменить контрастность на фото">
-                  <svg class="editor-form__icon editor-form__icon--contrast" width="32" height="32">
-                    <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <div class="editor-form__filter">
+              <ul class="editor-form__tools">
+                <li class="editor-form__tool">
+                  <button class="editor-form__button-tool editor-form__button-tool--current" type="button"
+                    aria-label="Кадрировать фото">
+                    <svg class="editor-form__icon editor-form__icon--crop" width="44" height="44">
+                      <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="editor-form__tool">
+                  <button class="editor-form__button-tool" type="button" aria-label="Изменить заливку на фото">
+                    <svg class="editor-form__icon editor-form__icon--fill" width="48" height="50">
+                      <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="editor-form__tool">
+                  <button class="editor-form__button-tool" type="button" aria-label="Изменить контрастность на фото">
+                    <svg class="editor-form__icon editor-form__icon--contrast" width="32" height="32">
+                      <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
 
-
-            <div class="editor-form__ranges">
-              <input class="editor-form__range editor-form__range--current" type="range">
-              <input class="editor-form__range" type="range">
-              <input class="editor-form__range" type="range">
+              <div class="editor-form__ranges">
+                <div class="editor-form__range editor-form__range--current">
+                  <div class="editor-form__range-scale"></div>
+                  <div class="editor-form__toggle editor-form__toggle--crop" tabindex="0"></div>
+                </div>
+                <div class="editor-form__range editor-form__range--fill">
+                  <div class="editor-form__range-scale"></div>
+                  <div class="editor-form__toggle editor-form__toggle--fill" tabindex="0"></div>
+                </div>
+                <div class="editor-form__range editor-form__range--contrast">
+                  <div class="editor-form__range-scale"></div>
+                  <div class="editor-form__toggle editor-form__toggle--contrast" tabindex="0"></div>
+                </div>
+              </div>
             </div>
 
             <div class="editor-form__buttons">

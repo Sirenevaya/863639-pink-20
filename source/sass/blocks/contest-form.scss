@@ -10,31 +10,33 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    column-gap: 70px;
   }
 }
 
 .contest-form__group {
   @media (max-width: $mobile-width-only) {
     &--grey-back {
-      padding-top: 42px;
-      padding-bottom: 43px;
+      padding-top: 39px;
+      padding-bottom: 34px;
       background-color: #f2f2f2;
     }
   }
 
   &--personal-data {
     padding-top: 5px;
-    padding-bottom: 44px;
+    padding-bottom: 41px;
   }
 
   &--contact-data {
-    padding-top: 42px;
-    padding-bottom: 44px;
+    padding-top: 32px;
+    padding-bottom: 41px;
   }
 
   &--textarea {
-    padding-top: 42px;
-    padding-bottom: 40px;
+    padding-top: 37px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $tablet-width) {
@@ -93,23 +95,24 @@
 
     &--personal-data {
       padding: 0;
-      padding-right: 6px;
     }
 
     &--checkbox {
-      padding-top: 5px;
-      padding-bottom: 53px;
+      padding-top: 3px;
+      padding-bottom: 41px;
+      padding-left: 58px;
     }
 
     &--contact-data {
       padding-top: 15px;
       padding-bottom: 27px;
+      padding-left: 58px;
     }
 
     &--radio {
-      padding: 0;
-      padding-top: 6px;
+      padding-top: 8px;
       padding-bottom: 45px;
+      padding-left: 58px;
     }
 
     &--textarea {
@@ -127,11 +130,17 @@
     }
 
     &--checkbox {
-      padding-bottom: 58px;
+      padding-top: 5px;
+      padding-bottom: 50px;
     }
 
     &--textarea {
       padding-bottom: 35px;
+    }
+
+    &--radio {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -139,11 +148,19 @@
 .contest-form__group-title {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
+
+  &--radio {
+    margin-bottom: 33px;
+  }
+
+  &--textarea {
+    margin-bottom: 16px;
+  }
 
   @media (max-width: $mobile-width-only) {
     &--contact-data {
@@ -170,18 +187,18 @@
   list-style: none;
 
   &--checkbox {
-    gap: 47px;
+    gap: 35px;
   }
 
   &--radio {
-    gap: 38px;
+    gap: 26px;
   }
 
   @media (min-width: $tablet-width) {
-    gap: 50px;
+    gap: 51px;
 
     &--checkbox {
-      gap: 52px;
+      gap: 35px;
     }
 
     &--contact-data {
@@ -189,12 +206,12 @@
     }
 
     &--radio {
-      gap: 45px;
+      gap: 26px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    gap: 51px;
+    gap: 53px;
 
     &--contact-data {
       grid-template-columns: 1fr 1fr;
@@ -203,10 +220,13 @@
 
     &--checkbox {
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 58px;
-      row-gap: 52px;
-      width: 820px;
-      margin: 0 auto;
+      column-gap: 56px;
+      row-gap: 35px;
+    }
+
+    &--radio {
+      gap: 28px;
+      margin-left: 72px;
     }
   }
 }
@@ -214,7 +234,6 @@
 .contest-form__textarea {
   width: 100%;
   min-height: 200px;
-  margin-top: -24px;
   padding-top: 13px;
   padding-right: 20px;
   padding-left: 20px;
@@ -225,10 +244,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 193px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 128px;
+    padding-top: 10px;
   }
 }
 
@@ -239,21 +261,22 @@
     align-items: center;
     width: 620px;
     margin: 0 auto;
-    margin-top: 7px;
-    margin-bottom: 34px;
+    margin-top: 10px;
+    margin-bottom: 49px;
     order: 5;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     width: 940px;
+    margin-bottom: 2px;
   }
 }
 
 .contest-form__requirement {
   margin: 0;
-  margin-top: 34px;
-  margin-bottom: 18px;
+  margin-top: 36px;
+  margin-bottom: 17px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;

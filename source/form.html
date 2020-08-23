@@ -86,46 +86,40 @@
 
           <ul class="contest-form__list contest-form__list--checkbox">
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Сделал селфи с акулой" checked>
-                Сделал селфи с акулой
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-photo" type="checkbox" name="progress"
+                value="Сделал селфи с акулой" checked>
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-photo">Сделал селфи с
+                акулой</label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Обгорел на пляже" checked>
-                Обгорел на пляже
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-beach" type="checkbox" name="progress"
+                value="Обгорел на пляже" checked>
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-beach">Обгорел на
+                пляже</label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Видел Чака Норрис">
-                Видел Чака Норриса
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-сhuck-norris" type="checkbox"
+                name="progress" value="Видел Чака Норрис">
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-сhuck-norris">Видел Чака
+                Норриса</label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Накупил сувениров">
-                Накупил сувениров
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-souvenir" type="checkbox"
+                name="progress" value="Накупил сувениров">
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-souvenir">Накупил
+                сувениров</label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Удержал башню" checked>
-                Удержал башню
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-tower" type="checkbox" name="progress"
+                value="Удержал башню" checked>
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-tower">Удержал
+                башню</label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Разгромил отель">
-                Разгромил отель
-              </label>
+              <input class="visually-hidden field-group__checkbox" id="checkbox-hotel" type="checkbox" name="progress"
+                value="Разгромил отель">
+              <label class="field-group__caption field-group__caption--checkbox" for="checkbox-hotel">Разгромил
+                отель</label>
             </li>
           </ul>
         </fieldset>
@@ -140,12 +134,18 @@
               <label class="field__caption field__caption--contact-data">Номер телефона</label>
               <input class="field__data field__data--contact-data" type="tel" name="phone"
                 placeholder="Номер, пожалуйста">
+              <svg class="field__icon" width="20" height="19">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
 
             <li class="contest-form__item field field--contact-data">
               <label class="field__caption field__caption--contact-data">Адрес почты</label>
               <input class="field__data field__data--contact-data" type="email" name="email"
                 placeholder="Введите почту *" required>
+              <svg class="field__icon field__icon--mail" width="18" height="13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
@@ -158,22 +158,20 @@
 
           <ul class="contest-form__list contest-form__list--radio">
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="iOS" checked>
-                Pink для iOS
-              </label>
+              <input class="visually-hidden field-group__radio" id="radio-ios" type="radio" name="app" value="iOS"
+                checked>
+              <label class="field-group__caption field-group__caption--radio" for="radio-ios">Pink для iOS</label>
             </li>
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="Android">
-                Pink на Android
-              </label>
+              <input class="visually-hidden field-group__radio" id="radio-android" type="radio" name="app"
+                value="Android">
+              <label class="field-group__caption field-group__caption--radio" for="radio-android">Pink на
+                Android</label>
             </li>
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="Windows">
-                Windows Phone
-              </label>
+              <input class="visually-hidden field-group__radio" id="radio-windows" type="radio" name="app"
+                value="Windows">
+              <label class="field-group__caption field-group__caption--radio" for="radio-windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
@@ -181,7 +179,7 @@
 
       <div class="contest-form__group contest-form__group--textarea">
         <fieldset class="contest-form__fieldset contest-form__fieldset--textarea">
-          <legend class="contest-form__group-title">Опишите свои эмоции</legend>
+          <legend class="contest-form__group-title contest-form__group-title--textarea">Опишите свои эмоции</legend>
 
           <textarea class="contest-form__textarea" name="message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

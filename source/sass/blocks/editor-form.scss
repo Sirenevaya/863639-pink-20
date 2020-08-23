@@ -1,62 +1,98 @@
 .editor-form {
-  padding-top: 20px;
-  padding-bottom: 41px;
-
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
-    padding-top: 57px;
-    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    padding-bottom: 57px;
   }
 }
 
 .editor-form__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 275px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin: 0;
+  }
+}
+
+.editor-form__filter {
+  padding-top: 29px;
+  padding-bottom: 114px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .editor-form__tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  padding-top: 29px;
-  padding-bottom: 67px;
+  padding-left: 15px;
+  padding-right: 25px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin: 0;
-    padding-top: 0;
-    text-align: left;
+    justify-content: space-between;
+    width: 55px;
+    height: 190px;
+    margin-top: -4px;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-top: -5px;
+    margin-left: -6px;
   }
 }
 
 .editor-form__tool {
+  position: relative;
+
+
   @media (min-width: $tablet-width) {
-    width: 275px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 61px;
+      left: 9px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba($basic-color, 0.1%);
+
+      @media (min-width: $desktop-width) {
+        width: 410px;
+      }
+    }
   }
 }
 
 .editor-form__button-tool {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 48px;
+  height: 48px;
   color: rgba($basic-color, 0.3%);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   &:hover {
     color: rgba($basic-color, 0.5%);
@@ -64,12 +100,22 @@
 
   &--current {
     color: $special-color;
+
+    @media (max-width: $mobile-width-only) {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     pointer-events: none;
     cursor: default;
   }
 }
 
 .editor-form__icon {
+  display: inline-block;
+  vertical-align: middle;
   fill: currentColor;
 
   @media (min-width: $tablet-width) {
@@ -83,6 +129,7 @@
     &--fill {
       width: 24px;
       height: 22px;
+      margin-top: 9px;
     }
 
     &--contrast {
@@ -100,33 +147,135 @@
     &--fill {
       width: 48px;
       height: 43px;
+      margin-top: 7px;
     }
 
     &--contrast {
       width: 32px;
       height: 32px;
+      margin-left: 5px;
     }
   }
 }
 
 .editor-form__ranges {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba($basic-color, 0.1%);
+  position: relative;
 }
 
 .editor-form__range {
-  display: none;
+  position: absolute;
+  top: 37px;
+  left: 20px;
+  width: 240px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+
+    &--current {
+      display: block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: -40px;
+        width: 320px;
+        height: 1px;
+        background-color: rgba($basic-color, 0.1%);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -166px;
+    left: 77px;
+
+    &--fill {
+      top: -93px;
+    }
+
+    &--contrast {
+      top: -23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 92px;
+  }
+}
+
+.editor-form__range-scale {
+  height: 2px;
+  background: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.editor-form__toggle {
+  position: absolute;
+  top: -4px;
+  right: 33px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $special-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $special-color;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--crop {
+      top: -5px;
+      right: 80px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 130px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--crop {
+      left: 69px;
+    }
+
+    &--fill {
+      top: -6px;
+      left: 247px;
+    }
+
+    &--contrast {
+      top: -6px;
+      right: 66px;
+    }
+  }
 }
 
 .editor-form__buttons {
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 38px;
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 410px;
+    margin-left: 0;
   }
 }

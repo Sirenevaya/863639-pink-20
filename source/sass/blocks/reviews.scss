@@ -13,6 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
     padding-top: 72px;
   }
 }
@@ -91,4 +93,46 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.reviews__buttons {
+  position: relative;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.reviews__button {
+  position: absolute;
+  top: -185px;
+  width: 22px;
+  height: 41px;
+  color: $basic-color;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--prev {
+    left: 125px;
+  }
+
+  &--next {
+    right: 135px;
+  }
+}
+
+.reviews__button-icon {
+  fill: currentColor;
 }

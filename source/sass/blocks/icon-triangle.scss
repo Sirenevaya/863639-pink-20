@@ -8,4 +8,8 @@
   &--footer {
     z-index: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    top: -1px;
+  }
 }
