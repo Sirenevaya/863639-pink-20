@@ -13,10 +13,9 @@
 .photo-content__inner {
   display: grid;
   gap: 20px;
+  width: 280px;
   margin: 0 auto;
   margin-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
