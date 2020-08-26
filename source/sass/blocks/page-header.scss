@@ -14,8 +14,7 @@
     box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
   }
 
-  &--closed .page-header__toggle:hover::before,
-  &--closed .page-header__toggle:focus::before {
+  &--closed .page-header__toggle:hover::before {
     background-color: $special-color;
     box-shadow: 0 10px 0 0 $special-color, 0 20px 0 0 $special-color;
   }
@@ -53,9 +52,7 @@
     }
 
     &:hover::before,
-    &:hover::after,
-    &:focus::before,
-    &:focus::after {
+    &:hover::after {
       background-color: $special-color;
     }
 

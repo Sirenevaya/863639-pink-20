@@ -171,16 +171,27 @@
   display: block;
   width: 13px;
   height: 12px;
+  color: $special-color;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $basic-color;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .user-post__heart-icon {
   position: absolute;
   top: 0;
   left: 0;
-  fill: $special-color;
+  fill: currentColor;
 }
 
 .user-post__likes-number {

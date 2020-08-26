@@ -144,6 +144,14 @@
   line-height: 24px;
   color: $special-color;
 
+  &:hover {
+    color: $basic-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;

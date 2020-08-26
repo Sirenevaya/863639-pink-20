@@ -36,4 +36,14 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  &:hover {
+    background-color: rgba($basic-color, 0.7%);
+    box-shadow: 0 0 20px 5px $basic-color;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.8;
+  }
 }

@@ -139,6 +139,24 @@
   }
 }
 
+.contacts__iframe-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 517px;
+  }
+}
+
 .contacts__map {
   position: relative;
   margin: 0;
@@ -156,7 +174,9 @@
   display: block;
   width: 100%;
   height: 200px;
+  margin: 0;
   object-fit: cover;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     height: 374px;
