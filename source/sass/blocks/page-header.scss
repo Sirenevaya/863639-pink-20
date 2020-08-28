@@ -66,11 +66,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  @media (min-width: 320px) and (max-width: 1199px) {
+  @media (min-width: 320px) and (max-width: 959px) {
     &--opened {
       background-color: $basic-color;
     }

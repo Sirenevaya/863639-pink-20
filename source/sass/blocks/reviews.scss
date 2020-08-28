@@ -13,16 +13,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding-top: 72px;
+    padding-bottom: 20px;
   }
 }
 
 .reviews__icon {
   fill: #efefef;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 959px) {
     display: none;
   }
 }
@@ -98,7 +99,7 @@
 .reviews__buttons {
   position: relative;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 959px) {
     display: none;
   }
 }
@@ -125,11 +126,11 @@
   }
 
   &--prev {
-    left: 125px;
+    left: 4px;
   }
 
   &--next {
-    right: 135px;
+    right: 16px;
   }
 }
 
