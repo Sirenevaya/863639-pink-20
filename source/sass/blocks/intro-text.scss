@@ -8,8 +8,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 91px;
     padding-right: 55px;
-    padding-bottom: 77px;
-    padding-left: 56px;
+    padding-bottom: 72px;
+    padding-left: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,10 +39,7 @@
 }
 
 .intro__text-item {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    vertical-align: baseline;
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

@@ -1,41 +1,119 @@
 .modal-notify {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: none;
-  padding-top: 44px;
+  max-width: 460px;
+  margin: auto;
   line-height: 24px;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  z-index: 3;
+
+  &--error {
+    height: 289px;
+  }
+
+  &--success {
+    height: 380px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--error {
+      height: 363px;
+    }
+
+    &--success {
+      height: 432px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+    height: 377px;
+  }
+}
+
+.modal-notify-text {
+  padding-top: 38px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 220px;
+    padding-top: 40px;
+  }
 }
 
 .modal-notify__title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    max-width: 215px;
     font-size: 30px;
     line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
   }
 }
 
 .modal-notify__description {
-  margin: 0;
-  margin-top: 37px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 310px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    margin-bottom: 0;
+  }
 }
 
 .modal-notify__close {
-  margin-top: 41px;
-  padding-top: 52px;
-  padding-bottom: 52px;
-  background-color: #f2f2f2;
-
   &--white-back {
-    margin-top: 50px;
-    padding-top: 0;
-    background-color: #ffffff;
+    padding-top: 9px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding-top: 52px;
-      background-color: #f2f2f2;
+  &--gray-back {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+
+    &--white-back {
+      padding-top: 5px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: #f2f2f2;
   }
 }

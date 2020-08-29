@@ -14,6 +14,15 @@
     box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
   }
 
+  &--closed .page-header__toggle:hover::before {
+    background-color: $special-color;
+    box-shadow: 0 10px 0 0 $special-color, 0 20px 0 0 $special-color;
+  }
+
+  &--closed .page-header__toggle:active::before {
+    opacity: 0.3;
+  }
+
   &--opened .page-header__toggle {
     top: 0;
     right: auto;
@@ -41,17 +50,27 @@
     &::after {
       transform: rotate(-45deg);
     }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $special-color;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  @media (min-width: 320px) and (max-width: 1199px) {
+  @media (min-width: 320px) and (max-width: 959px) {
     &--opened {
       background-color: $basic-color;
     }

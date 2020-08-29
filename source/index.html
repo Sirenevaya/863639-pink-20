@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -58,7 +59,8 @@
           <h2 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h2>
 
           <div class="download-app__inner">
-            <button class="download-app__button button" type="button">Скачать приложение</button>
+            <a class="download-app__link button" href="https://www.apple.com/ru/ios/app-store">Скачать
+              приложение</a>
 
             <ul class="download-app__list download-app-list">
               <li class="download-app-list__item">
@@ -95,7 +97,7 @@
       </div>
 
       <div class="features-app__inner">
-        <svg class="features-app__icon icon-triangle" width="100%">
+        <svg class="features-app__icon icon-triangle" width="100%" height="100%">
           <use xlink:href="img/sprite.svg#bg-triangle-white"></use>
         </svg>
         <div class="features-app__list">
@@ -120,15 +122,19 @@
         </div>
 
         <div class="features-app__images">
-          <img class="features-app__img" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302"
+          <img class="features-app__img" src="img/iphone-screen-1-desktop@1x.png"
+            srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302"
             alt="Телефон с серым фильтром для фото">
-          <img class="features-app__img" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302"
+          <img class="features-app__img" src="img/iphone-screen-2-desktop@1x.png"
+            srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302"
             alt="Телефон с розовым фильтром для фото">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <source media="(min-width: 960px)"
+              srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
             <img class="features-app__img features-app__img--show-all-resolutions" src="img/iphone-screen-mobile@1x.png"
-              alt="Телефон с розовым фильтром и смайликом поверх фото">
+              srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с розовым фильтром и смайликом поверх фото">
           </picture>
         </div>
       </div>
@@ -184,11 +190,24 @@
         <button class="carousel-toggles__toggle" type="button" aria-label="2"></button>
         <button class="carousel-toggles__toggle" type="button" aria-label="3"></button>
       </div>
+
+      <div class="reviews__buttons">
+        <button class="reviews__button reviews__button--prev" type="button" aria-label="Предыдущий отзыв">
+          <svg class="reviews__button-icon" width="22" height="41">
+            <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="reviews__button reviews__button--next" type="button" aria-label="Следующий отзыв">
+          <svg class="reviews__button-icon" width="22" height="41">
+            <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </section>
 
     <section class="price-app">
       <h2 class="visually-hidden">Тарифы приложения PINK</h2>
-      <svg class="price-app__icon icon-triangle" width="100%">
+      <svg class="price-app__icon icon-triangle" width="100%" height="100%">
         <use xlink:href="img/sprite.svg#bg-triangle-white"></use>
       </svg>
       <table class="table price-table">
@@ -345,13 +364,19 @@
       </div>
 
       <figure class="contacts__map">
-        <svg class="contacts__icon icon-triangle icon-triangle--footer" width="100%">
+        <svg class="contacts__icon icon-triangle icon-triangle--footer" width="100%" height="100%">
           <use xlink:href="img/sprite.svg#bg-triangle-white-footer"></use>
         </svg>
+        <div id="map">
+          <iframe class="contacts__iframe-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1598444744569!5m2!1sru!2s"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"
             alt="Карта офиса по адресу ул. Большая Конюшенная, 19">
         </picture>
       </figure>

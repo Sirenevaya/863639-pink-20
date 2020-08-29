@@ -1,12 +1,13 @@
 .post-photo {
-  padding-top: 40px;
+  padding-top: 44px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 73px;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 57px;
+    padding-bottom: 29px;
   }
 }
 
@@ -20,15 +21,32 @@
 
   @media (min-width: $tablet-width) {
     width: 422px;
-    margin-bottom: 78px;
+    margin-bottom: 70px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 67px;
   }
 }
 
 .post-photo__inner {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 80px;
+    padding-bottom: 57px;
+  }
 }

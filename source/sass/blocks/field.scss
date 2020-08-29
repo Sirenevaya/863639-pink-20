@@ -10,7 +10,20 @@
     }
 
     &--contact-data {
+      position: relative;
       flex-direction: column-reverse;
+
+      @media (min-width: $tablet-width) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: 2px;
+          width: 57px;
+          height: 60px;
+          background-color: #e5e5e5;
+        }
+      }
     }
   }
 }
@@ -26,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 18px;
 
     &--contact-data {
       margin-bottom: 0;
@@ -37,6 +50,7 @@
 }
 
 .field__data {
+  position: relative;
   display: block;
   width: 100%;
   padding-top: 15px;
@@ -44,47 +58,40 @@
   padding-bottom: 15px;
   padding-left: 20px;
   font: inherit;
+  background-color: transparent;
   border-width: 2px;
   border-style: solid;
   border-color: #e5e5e5;
   border-radius: 1px;
-}
 
-.field-group {
-  @media (min-width: $desktop-width) {
-    &:nth-child(2),
-    &:nth-child(4),
-    &:nth-child(6) {
-      order: 2;
-    }
+  &::placeholder {
+    color: $basic-color;
+  }
+
+  &:hover {
+    border-color: $basic-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $special-color;
+    outline: none;
   }
 }
 
-.field-group__caption {
-  &--checkbox {
-    padding-left: 57px;
+.field__icon {
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  fill: $special-color;
+  z-index: 2;
+
+  &--mail {
+    top: 25px;
+    right: 20px;
   }
 
-  &--radio {
-    position: relative;
-    display: block;
-    padding-left: 68px;
-    cursor: pointer;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--checkbox {
-      padding-left: 117px;
-    }
-
-    &--radio {
-      padding-left: 120px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--checkbox {
-      padding-left: 57px;
-    }
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

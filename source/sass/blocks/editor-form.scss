@@ -1,62 +1,98 @@
 .editor-form {
-  padding-top: 20px;
-  padding-bottom: 41px;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 620px;
-    margin: 0 auto;
-    padding-top: 57px;
-    padding-bottom: 54px;
+    max-width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
-    padding-bottom: 57px;
+    max-width: 800px;
   }
 }
 
 .editor-form__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 410px;
+  }
+}
+
+.editor-form__filter {
+  padding-top: 29px;
+  padding-bottom: 72px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 39px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 55px 1fr;
+    padding: 0;
+  }
 }
 
 .editor-form__tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 35px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 29px;
-  padding-bottom: 67px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 42px;
+    justify-self: start;
     margin: 0;
-    padding-top: 0;
-    text-align: left;
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    gap: 21px;
   }
 }
 
 .editor-form__tool {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    width: 275px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 53px;
+      left: -2px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba($basic-color, 0.1%);
+
+      @media (min-width: $desktop-width) {
+        top: 59px;
+        width: 410px;
+      }
+    }
   }
 }
 
 .editor-form__button-tool {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 48px;
+  height: 48px;
   color: rgba($basic-color, 0.3%);
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
+  padding: 0;
 
   &:hover {
     color: rgba($basic-color, 0.5%);
@@ -64,12 +100,29 @@
 
   &--current {
     color: $special-color;
+
+    @media (max-width: $mobile-width-only) {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
     pointer-events: none;
     cursor: default;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
   }
 }
 
 .editor-form__icon {
+  display: inline-block;
+  vertical-align: middle;
   fill: currentColor;
 
   @media (min-width: $tablet-width) {
@@ -83,6 +136,7 @@
     &--fill {
       width: 24px;
       height: 22px;
+      margin-top: 9px;
     }
 
     &--contrast {
@@ -100,33 +154,129 @@
     &--fill {
       width: 48px;
       height: 43px;
+      margin-top: 7px;
     }
 
     &--contrast {
       width: 32px;
       height: 32px;
+      margin-left: 5px;
     }
   }
 }
 
 .editor-form__ranges {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba($basic-color, 0.1%);
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 58px;
+    justify-self: start;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    gap: 47px;
+  }
 }
 
 .editor-form__range {
-  display: none;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+
+    &--current {
+      display: block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: -20px;
+        width: 320px;
+        height: 1px;
+        background-color: rgba($basic-color, 0.1%);
+      }
+    }
+  }
+}
+
+.editor-form__range-scale {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.editor-form__toggle {
+  position: absolute;
+  top: -6px;
+  right: 53px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $special-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $special-color;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -4px;
+
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -6px;
+
+    &--crop {
+      left: 72px;
+    }
+
+    &--fill {
+      left: 250px;
+    }
+
+    &--contrast {
+      right: 111px;
+    }
+  }
 }
 
 .editor-form__buttons {
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 38px;
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 410px;
+    margin-right: 0;
   }
 }

@@ -60,25 +60,16 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-  }
-
-  &--main-photo {
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      height: fit-content;
-    }
+    height: fit-content;
   }
 }
 
 .user-post__comment {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 19px;
-  padding-right: 10px;
+  padding-right: 35px;
   padding-bottom: 19px;
   padding-left: 17px;
   line-height: 24px;
@@ -87,7 +78,6 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
     min-height: 155px;
     margin: 0;
     padding-top: 23px;
@@ -102,7 +92,9 @@
   }
 
   &--main-photo {
+    width: 280px;
     margin: 0 auto;
+    padding-right: 10px;
 
     @media (min-width: $tablet-width) {
       flex-flow: row wrap;
@@ -125,11 +117,6 @@
 .user-post__author {
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
-
-  &--main-photo {
-    width: 380px;
-  }
 }
 
 .user-post__author-name {
@@ -140,7 +127,6 @@
 }
 
 .user-post__time {
-  width: 200px;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -185,16 +171,27 @@
   display: block;
   width: 13px;
   height: 12px;
+  color: $special-color;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $basic-color;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .user-post__heart-icon {
   position: absolute;
   top: 0;
   left: 0;
-  fill: $special-color;
+  fill: currentColor;
 }
 
 .user-post__likes-number {

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -65,16 +66,18 @@
         <fieldset class="contest-form__fieldset contest-form__fieldset--personal-data">
           <ul class="contest-form__list">
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Фамилия:</label>
-              <input class="field__data" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+              <label class="field__caption" for="last-name">Фамилия:</label>
+              <input class="field__data" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *"
+                required>
             </li>
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Имя:</label>
-              <input class="field__data" type="text" name="name" placeholder="Введите ваше имя *" required>
+              <label class="field__caption" for="name">Имя:</label>
+              <input class="field__data" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Отчество:</label>
-              <input class="field__data" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              <label class="field__caption" for="middle-name">Отчество:</label>
+              <input class="field__data" id="middle-name" type="text" name="middle-name"
+                placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
@@ -86,44 +89,50 @@
 
           <ul class="contest-form__list contest-form__list--checkbox">
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+              <label class="field-group__caption">
+                <input class=" visually-hidden field-group__input" type="checkbox" name="progress"
                   value="Сделал селфи с акулой" checked>
+                <span class="field-group__checkbox"></span>
                 Сделал селфи с акулой
               </label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="checkbox" name="progress"
                   value="Обгорел на пляже" checked>
+                <span class="field-group__checkbox"></span>
                 Обгорел на пляже
               </label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="checkbox" name="progress"
                   value="Видел Чака Норрис">
+                <span class="field-group__checkbox"></span>
                 Видел Чака Норриса
               </label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="checkbox" name="progress"
                   value="Накупил сувениров">
+                <span class="field-group__checkbox"></span>
                 Накупил сувениров
               </label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
-                  value="Удержал башню" checked>
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="checkbox" name="progress" value="Удержал башню"
+                  checked>
+                <span class="field-group__checkbox"></span>
                 Удержал башню
               </label>
             </li>
             <li class="contest-form__item field-group">
-              <label class="field-group__caption field-group__caption--checkbox">
-                <input class="visually-hidden field-group__checkbox" type="checkbox" name="progress"
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="checkbox" name="progress"
                   value="Разгромил отель">
+                <span class="field-group__checkbox"></span>
                 Разгромил отель
               </label>
             </li>
@@ -137,15 +146,21 @@
           </legend>
           <ul class="contest-form__list contest-form__list--contact-data">
             <li class="contest-form__item field field--contact-data">
-              <label class="field__caption field__caption--contact-data">Номер телефона</label>
-              <input class="field__data field__data--contact-data" type="tel" name="phone"
+              <label class="field__caption field__caption--contact-data" for="phone">Номер телефона</label>
+              <input class="field__data field__data--contact-data" id="phone" type="tel" name="phone"
                 placeholder="Номер, пожалуйста">
+              <svg class="field__icon" width="20" height="19">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
 
             <li class="contest-form__item field field--contact-data">
-              <label class="field__caption field__caption--contact-data">Адрес почты</label>
-              <input class="field__data field__data--contact-data" type="email" name="email"
+              <label class="field__caption field__caption--contact-data" for="email">Адрес почты</label>
+              <input class="field__data field__data--contact-data" id="email" type="email" name="email"
                 placeholder="Введите почту *" required>
+              <svg class="field__icon field__icon--mail" width="18" height="13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
@@ -158,20 +173,23 @@
 
           <ul class="contest-form__list contest-form__list--radio">
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="iOS" checked>
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="radio" name="app" value="iOS" checked>
+                <span class="field-group__radio"></span>
                 Pink для iOS
               </label>
             </li>
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="Android">
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="radio" name="app" value="Android">
+                <span class="field-group__radio"></span>
                 Pink на Android
               </label>
             </li>
             <li class="contest-form__item field-group field-group--radio">
-              <label class="field-group__caption field-group__caption--radio">
-                <input class="visually-hidden field-group__radio" type="radio" name="app" value="Windows">
+              <label class="field-group__caption">
+                <input class="visually-hidden field-group__input" type="radio" name="app" value="Windows">
+                <span class="field-group__radio"></span>
                 Windows Phone
               </label>
             </li>
@@ -181,7 +199,7 @@
 
       <div class="contest-form__group contest-form__group--textarea">
         <fieldset class="contest-form__fieldset contest-form__fieldset--textarea">
-          <legend class="contest-form__group-title">Опишите свои эмоции</legend>
+          <legend class="contest-form__group-title contest-form__group-title--textarea">Опишите свои эмоции</legend>
 
           <textarea class="contest-form__textarea" name="message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -246,19 +264,23 @@
     </div>
   </footer>
 
-  <div class="modal-notify">
-    <p class="modal-notify__title">Что-то пошло не так!</p>
-    <p class="modal-notify__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <div class="modal-notify modal-notify--error">
+    <div class="modal-notify-text">
+      <p class="modal-notify__title">Что-то пошло не так!</p>
+      <p class="modal-notify__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
     <div class="modal-notify__close modal-notify__close--white-back">
       <button class="button button--green" type="button">Ок</button>
     </div>
   </div>
 
-  <div class="modal-notify">
-    <p class="modal-notify__title">Ваша заявка отправлена</p>
-    <p class="modal-notify__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшеевремя мы
-      рассмотрим ее и оповестим вас.</p>
-    <div class="modal-notify__close">
+  <div class="modal-notify modal-notify--success">
+    <div class="modal-notify-text">
+      <p class="modal-notify__title">Ваша заявка отправлена</p>
+      <p class="modal-notify__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время
+        мы рассмотрим ее и <br>оповестим вас.</p>
+    </div>
+    <div class="modal-notify__close modal-notify__close--gray-back">
       <button class="button button--green button--wide" type="button">Закрыть окно</button>
     </div>
   </div>
