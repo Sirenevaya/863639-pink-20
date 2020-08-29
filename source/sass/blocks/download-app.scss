@@ -20,7 +20,8 @@
   }
 }
 
-.download-app__button {
+.download-app__link {
+  display: block;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {

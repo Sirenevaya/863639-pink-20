@@ -32,14 +32,6 @@
   border-style: solid;
   border-color: #e5e5e5;
   border-radius: 1px;
-
-  &:hover {
-    border-color: $basic-color;
-  }
-
-  &:active {
-    border-color: $special-color;
-  }
 }
 
 .field-group__input:checked + .field-group__checkbox::after {
@@ -71,14 +63,6 @@
   @media (min-width: $tablet-width) {
     margin-right: 20px;
   }
-
-  &:hover {
-    border-color: $basic-color;
-  }
-
-  &:active {
-    border-color: $special-color;
-  }
 }
 
 .field-group__input:checked + .field-group__radio::after {
@@ -94,5 +78,15 @@
 
 .field-group__input:focus + .field-group__checkbox,
 .field-group__input:focus + .field-group__radio {
-  box-shadow: 0 0 0 2px $special-color;
+  border-color: $special-color;
+}
+
+.field-group__input:hover + .field-group__checkbox,
+.field-group__input:hover + .field-group__radio {
+  border-color: $basic-color;
+}
+
+.field-group__input:active + .field-group__checkbox,
+.field-group__input:active + .field-group__radio {
+  border-color: $special-color;
 }
