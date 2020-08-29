@@ -66,16 +66,18 @@
         <fieldset class="contest-form__fieldset contest-form__fieldset--personal-data">
           <ul class="contest-form__list">
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Фамилия:</label>
-              <input class="field__data" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+              <label class="field__caption" for="last-name">Фамилия:</label>
+              <input class="field__data" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *"
+                required>
             </li>
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Имя:</label>
-              <input class="field__data" type="text" name="name" placeholder="Введите ваше имя *" required>
+              <label class="field__caption" for="name">Имя:</label>
+              <input class="field__data" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest-form__item field field--inline">
-              <label class="field__caption">Отчество:</label>
-              <input class="field__data" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              <label class="field__caption" for="middle-name">Отчество:</label>
+              <input class="field__data" id="middle-name" type="text" name="middle-name"
+                placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
@@ -144,8 +146,8 @@
           </legend>
           <ul class="contest-form__list contest-form__list--contact-data">
             <li class="contest-form__item field field--contact-data">
-              <label class="field__caption field__caption--contact-data">Номер телефона</label>
-              <input class="field__data field__data--contact-data" type="tel" name="phone"
+              <label class="field__caption field__caption--contact-data" for="phone">Номер телефона</label>
+              <input class="field__data field__data--contact-data" id="phone" type="tel" name="phone"
                 placeholder="Номер, пожалуйста">
               <svg class="field__icon" width="20" height="19">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -153,8 +155,8 @@
             </li>
 
             <li class="contest-form__item field field--contact-data">
-              <label class="field__caption field__caption--contact-data">Адрес почты</label>
-              <input class="field__data field__data--contact-data" type="email" name="email"
+              <label class="field__caption field__caption--contact-data" for="email">Адрес почты</label>
+              <input class="field__data field__data--contact-data" id="email" type="email" name="email"
                 placeholder="Введите почту *" required>
               <svg class="field__icon field__icon--mail" width="18" height="13">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>

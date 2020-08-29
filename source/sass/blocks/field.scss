@@ -64,6 +64,10 @@
   border-color: #e5e5e5;
   border-radius: 1px;
 
+  &::placeholder {
+    color: $basic-color;
+  }
+
   &:hover {
     border-color: $basic-color;
   }

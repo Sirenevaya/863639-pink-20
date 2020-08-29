@@ -242,6 +242,10 @@
   border-style: solid;
   border-color: #e5e5e5;
 
+  &::placeholder {
+    color: $basic-color;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 193px;
     padding-top: 15px;
