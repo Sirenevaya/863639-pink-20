@@ -52,20 +52,20 @@
       left: -2px;
       width: 74px;
       height: 74px;
-      background-image: url("../img/bg-hit.svg");
+      background-image: url('data:image/svg+xml,%3Csvg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M74 0L37 37L0 74V41L41 0H74Z" fill="%23D22856"/%3E%3C/svg%3E%0A');
       background-repeat: no-repeat;
       z-index: 10;
 
       @media (min-width: $tablet-width) {
         width: 61px;
         height: 61px;
-        background-image: url("../img/bg-hit-tablet.svg");
+        background-image: url('data:image/svg+xml,%3Csvg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M61 0L30.5 30.5L0 61V33.7973L33.7973 0H61Z" fill="%23D22856"/%3E%3C/svg%3E%0A');
       }
 
       @media (min-width: $desktop-width) {
         width: 74px;
         height: 74px;
-        background-image: url("../img/bg-hit.svg");
+        background-image: url('data:image/svg+xml,%3Csvg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M74 0L37 37L0 74V41L41 0H74Z" fill="%23D22856"/%3E%3C/svg%3E%0A');
       }
     }
 
