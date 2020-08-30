@@ -57,14 +57,22 @@
       z-index: 10;
 
       @media (min-width: $tablet-width) {
-        left: 0;
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/bg-hit-tablet.svg");
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 74px;
+        height: 74px;
+        background-image: url("../img/bg-hit.svg");
       }
     }
 
     &::before {
       content: "Хит";
       position: absolute;
-      top: 14px;
+      top: 11px;
       left: 14px;
       transform: rotate(-45deg);
       font-weight: 400;
@@ -73,7 +81,12 @@
       z-index: 11;
 
       @media (min-width: $tablet-width) {
-        top: 12px;
+        top: 8px;
+        left: 5px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 11px;
         left: 16px;
       }
     }
