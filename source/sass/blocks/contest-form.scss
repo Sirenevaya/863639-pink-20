@@ -244,6 +244,17 @@
 
   &::placeholder {
     color: $basic-color;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $basic-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $special-color;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
