@@ -9,6 +9,9 @@ const imagemin = require("gulp-imagemin");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const babel = require("gulp-babel");
+const terser = require("gulp-terser");
 
 // Clean
 
@@ -50,8 +53,12 @@ exports.images = images;
 // Html
 
 const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(gulp.dest('build'))
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+    }))
+    .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 };
 
@@ -76,9 +83,23 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(babel({
+      presets: ["@babel/preset-env"]
+    }))
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.scripts = scripts;
+
 // Build
 
-const build = gulp.series(clean, copy, html, styles, images);
+const build = gulp.series(clean, copy, html, styles, scripts);
 
 exports.build = build;
 
@@ -101,8 +122,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/*.html'.on("change", gulp.series(html)));
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch("source/*.html").on("change", gulp.series(html));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
 }
 
 exports.watcher = watcher;
