@@ -181,7 +181,7 @@
 
 .contest-form__list {
   display: grid;
-  gap: 16px;
+  row-gap: 16px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -202,7 +202,7 @@
     }
 
     &--contact-data {
-      gap: 28px;
+      column-gap: 28px;
     }
 
     &--radio {
@@ -215,7 +215,8 @@
 
     &--contact-data {
       grid-template-columns: 1fr 1fr;
-      gap: 74px;
+      column-gap: 74px;
+      row-gap: 20px;
     }
 
     &--checkbox {
@@ -289,7 +290,8 @@
 }
 
 .contest-form__requirement {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 280px;
   margin-top: 36px;
   margin-bottom: 17px;
   font-size: 14px;
