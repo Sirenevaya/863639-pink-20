@@ -99,7 +99,7 @@ exports.scripts = scripts;
 
 // Build
 
-const build = gulp.series(clean, copy, html, styles, scripts);
+const build = gulp.series(clean, copy, html, styles, scripts, images);
 
 exports.build = build;
 
