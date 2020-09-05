@@ -20,18 +20,17 @@
 }
 
 .price-table__cell {
-  padding-top: 10px;
-  padding-bottom: 27px;
+  padding-top: 12px;
+  padding-bottom: 29px;
   text-align: center;
   background-color: $basic-color;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $basic-color;
-  border-right-width: 2px;
-  border-right-style: solid;
+  border-bottom: none;
   border-right-color: #e5e5e5;
 
   &--left {
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: $basic-color;
     border-radius: 1px 0 0 0;
   }
 
@@ -48,7 +47,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -2px;
+      top: 0;
       left: -2px;
       width: 74px;
       height: 74px;
@@ -57,22 +56,26 @@
       z-index: 10;
 
       @media (min-width: $tablet-width) {
+        left: 0;
         width: 61px;
         height: 61px;
         background-image: url('data:image/svg+xml,%3Csvg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M61 0L30.5 30.5L0 61V33.7973L33.7973 0H61Z" fill="%23D22856"/%3E%3C/svg%3E%0A');
+        background-position: -4px 0;
       }
 
       @media (min-width: $desktop-width) {
+        left: -2px;
         width: 74px;
         height: 74px;
         background-image: url('data:image/svg+xml,%3Csvg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M74 0L37 37L0 74V41L41 0H74Z" fill="%23D22856"/%3E%3C/svg%3E%0A');
+        background-position: 2px 0;
       }
     }
 
     &::before {
       content: "Хит";
       position: absolute;
-      top: 11px;
+      top: 15px;
       left: 14px;
       transform: rotate(-45deg);
       font-weight: 400;
@@ -81,12 +84,12 @@
       z-index: 11;
 
       @media (min-width: $tablet-width) {
-        top: 8px;
+        top: 10px;
         left: 5px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 11px;
+        top: 14px;
         left: 16px;
       }
     }
@@ -100,7 +103,7 @@
 
   @media (min-width: $tablet-width) {
     width: 154px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +126,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 1px;
+    margin-bottom: 4px;
     font-size: 18px;
   }
 }

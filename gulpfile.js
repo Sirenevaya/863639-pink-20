@@ -99,7 +99,7 @@ exports.scripts = scripts;
 
 // Build
 
-const build = gulp.series(clean, copy, html, styles, scripts);
+const build = gulp.series(clean, copy, html, styles, scripts, images);
 
 exports.build = build;
 
@@ -129,5 +129,5 @@ const watcher = () => {
 exports.watcher = watcher;
 
 exports.default = gulp.series(
-  server, watcher
+  build, server, watcher
 );
