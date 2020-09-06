@@ -19,7 +19,7 @@
   }
 }
 
-.price-table__cell {
+.price-table__head-cell {
   padding-top: 12px;
   padding-bottom: 29px;
   text-align: center;
@@ -95,12 +95,6 @@
     }
   }
 
-  @media (max-width: $mobile-width-only) {
-    &--show-tablet {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 154px;
     padding-bottom: 9px;
@@ -111,6 +105,19 @@
     padding-top: 15px;
     padding-bottom: 20px;
     padding-left: 26px;
+  }
+}
+
+.price-table__cell {
+  padding-left: 16px;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #e5e5e5;
+
+  &--show-tablet {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 }
 

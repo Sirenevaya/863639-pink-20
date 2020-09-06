@@ -14,11 +14,9 @@
 
 .user-post__link {
   display: block;
-  margin: 0 auto;
 
   &--main-photo {
     position: relative;
-    max-width: 320px;
 
     &::before {
       content: "Панорама дня";
@@ -42,25 +40,24 @@
 
       @media (min-width: $desktop-width) {
         top: 54px;
+        right: 10px;
+      }
+
+      @media (min-width: 1200px) {
         right: 130px;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      max-width: 660px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 1200px;
     }
   }
 }
 
 .user-post__img {
   display: block;
+  width: 100%;
 
-  @media (min-width: $tablet-width) {
-    height: fit-content;
+  &--main-photo {
+    @media (min-width: $tablet-width) {
+      min-height: 509px;
+    }
   }
 }
 
