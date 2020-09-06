@@ -14,39 +14,45 @@
 
 .user-post__link {
   display: block;
+}
 
-  &--main-photo {
-    position: relative;
+.user-post__label {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
 
-    &::before {
-      content: "Панорама дня";
-      position: absolute;
-      top: 0;
-      right: 20px;
-      width: 140px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 24px;
-      color: #ffffff;
-      text-transform: uppercase;
-      background-color: $special-color;
-      z-index: 10;
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
 
-      @media (min-width: $tablet-width) {
-        top: 57px;
-      }
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+  }
+}
 
-      @media (min-width: $desktop-width) {
-        top: 54px;
-        right: 10px;
-      }
+.user-post__label-text {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $special-color;
+  z-index: 10;
 
-      @media (min-width: 1200px) {
-        right: 130px;
-      }
-    }
+  @media (min-width: $tablet-width) {
+    top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 10px;
   }
 }
 
@@ -100,6 +106,7 @@
       width: 620px;
       min-height: 121px;
       padding-bottom: 0;
+      padding-right: 29px;
     }
 
     @media (min-width: $desktop-width) {
